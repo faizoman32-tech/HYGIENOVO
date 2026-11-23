@@ -1,0 +1,2254 @@
+<!-- HYGIENOVO — Homepage -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HYGIENOVO — A Cleaner Standard for Every Space</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-forest': '#123D32',
+        'primary-green': '#1C6B52',
+        'fresh-mint': '#DDF2E8',
+        'off-white': '#F8FAF7',
+        'pure-white': '#FFFFFF',
+        'charcoal': '#202824',
+        'muted-grey': '#77817B',
+        'gold-accent': '#C5A46D',
+        'success': '#1C6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#8F6100',
+        'on-warning': '#FFFFFF',
+        'light-primary': '#1C6B52',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#DDF2E8',
+        'light-on-primary-container': '#123D32',
+        'light-secondary': '#123D32',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EAF3EC',
+        'light-on-secondary-container': '#123D32',
+        'light-tertiary': '#755A2A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEED8',
+        'light-on-tertiary-container': '#271900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAF7',
+        'light-on-background': '#202824',
+        'light-surface': '#F8FAF7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F6F2',
+        'light-surface-container': '#E8EFEA',
+        'light-surface-container-high': '#E0E9E3',
+        'light-surface-container-highest': '#D6E0DA',
+        'light-on-surface': '#202824',
+        'light-on-surface-variant': '#535D57',
+        'light-outline': '#77817B',
+        'light-outline-variant': '#D5DFD8',
+        'light-inverse-surface': '#123D32',
+        'light-inverse-on-surface': '#FFFFFF',
+        'light-inverse-primary': '#8BD5B7',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
+        'section': '80px',
+      },
+      fontFamily: {
+        'display': ['"Manrope"', 'sans-serif'],
+        'headline': ['"Manrope"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '58px', letterSpacing: '-1.0px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-md': ['40px', { lineHeight: '46px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-deep-forest text-light-inverse-on-surface py-2 px-md text-center">
+    <p class="font-body text-body-sm" data-design-text-token="body-sm">
+      Dubai &amp; UAE Commercial Supply • All catalog prices shown in AED are demo pricing for preview purposes
+    </p>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl h-20 flex items-center justify-between gap-md">
+      <!-- Left: Brand Logo & Mobile Menu Toggle -->
+      <div class="flex items-center gap-sm">
+        <button id="mobile-menu-btn" type="button" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <a href="../homepage/Homepage.html" class="flex items-center gap-2.5 shrink-0">
+          <span class="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
+            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">eco</span>
+          </span>
+          <span class="font-headline text-title-lg tracking-tight text-light-secondary font-bold" data-design-text-token="title-lg">HYGIENOVO</span>
+        </a>
+      </div>
+
+      <!-- Centre: Primary Navigation + Mega Menu Trigger -->
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-5">
+        <a href="../homepage/Homepage.html" class="font-label text-label-md text-light-primary font-semibold whitespace-nowrap" data-design-text-token="label-md">Home</a>
+        <div class="relative group">
+          <a href="../product-catalogue/ProductCatalogue.html" class="inline-flex items-center gap-1 font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap py-2" data-design-text-token="label-md">
+            <span>Shop</span>
+            <span class="material-symbols-outlined text-[16px]" aria-hidden="true">expand_more</span>
+          </a>
+          <!-- Mega Menu -->
+          <div class="hidden group-hover:block absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[680px] z-50">
+            <div class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant shadow-lg p-lg grid grid-cols-3 gap-lg">
+              <div>
+                <p class="font-label text-label-sm text-light-primary uppercase tracking-wider mb-sm" data-design-text-token="label-sm">Core Categories</p>
+                <ul class="flex flex-col gap-xs">
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Cleaning Chemicals</a></li>
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Cleaning Equipment</a></li>
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Washroom Hygiene</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-label text-label-sm text-light-primary uppercase tracking-wider mb-sm" data-design-text-token="label-sm">Consumables &amp; PPE</p>
+                <ul class="flex flex-col gap-xs">
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Paper Products</a></li>
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=janitorial" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Janitorial Supplies</a></li>
+                  <li><a href="../product-catalogue/ProductCatalogue.html?cat=safety" class="font-body text-body-sm text-light-on-surface hover:text-light-primary">Safety &amp; Protection</a></li>
+                </ul>
+              </div>
+              <div class="bg-light-primary-container rounded-md p-md flex flex-col justify-between">
+                <div>
+                  <p class="font-title text-title-sm text-light-on-primary-container mb-xs" data-design-text-token="title-sm">B2B Bulk Supply</p>
+                  <p class="font-body text-body-sm text-light-on-primary-container" data-design-text-token="body-sm">Custom quotes for multi-site UAE contracts.</p>
+                </div>
+                <a href="../b2b-quotation/B2BQuotation.html" class="mt-sm inline-flex items-center gap-1 font-label text-label-sm text-light-secondary font-semibold hover:underline">
+                  <span>Request Quote</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">Washroom Hygiene</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">Office Supplies</a>
+        <a href="#brand-story" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">About Us</a>
+        <a href="#footer" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap" data-design-text-token="label-md">Contact</a>
+      </nav>
+
+      <!-- Right: Utility Icons + Quote CTA -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button id="search-toggle-btn" type="button" aria-label="Search products" class="inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+        <a href="../b2b-quotation/B2BQuotation.html" aria-label="Business account" class="hidden sm:inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[20px]">person</span>
+        </a>
+        <button type="button" aria-label="Wishlist" class="hidden sm:inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+        <a href="../cart-checkout/CartCheckout.html" aria-label="Shopping cart with 3 items" class="relative inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+          <span id="header-cart-count" data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" class="absolute -top-0.5 -right-0.5 inline-flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-light-primary text-light-on-primary font-label text-label-sm tabular-nums">3</span>
+        </a>
+        <a href="../b2b-quotation/B2BQuotation.html" data-component-id="button-primary-compact" data-component-type="button" data-component-variant="primary" class="hidden sm:inline-flex items-center justify-center px-md py-2.5 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary transition-colors whitespace-nowrap">
+          <span data-design-text-token="label-md">Request a Quote</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Expandable Global Search Bar -->
+    <div id="global-search-bar" class="hidden border-t border-light-outline-variant bg-light-surface-container-low px-md lg:px-xl py-sm">
+      <form action="../product-catalogue/ProductCatalogue.html" class="max-w-[1280px] mx-auto flex items-center gap-sm">
+        <span class="material-symbols-outlined text-light-on-surface-variant text-[20px]">search</span>
+        <input type="search" placeholder="Search 5L chemicals, microfiber cloths, mop sets, or SKU..." class="flex-1 bg-transparent border-0 focus:ring-0 font-body text-body-md text-light-on-surface placeholder:text-light-outline">
+        <button type="submit" class="px-md py-1.5 rounded bg-light-primary text-light-on-primary font-label text-label-md">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-charcoal/40 lg:hidden">
+    <div class="w-80 max-w-full min-h-[1024px] bg-light-surface-container-lowest p-lg flex flex-col gap-lg shadow-xl" data-stitch-vh="min-h-[1024px]===min-h-screen">
+      <div class="flex items-center justify-between">
+        <span class="font-headline text-title-lg text-light-secondary font-bold">HYGIENOVO</span>
+        <button id="mobile-drawer-close" type="button" aria-label="Close menu" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-light-surface-container">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-sm">
+        <a href="../homepage/Homepage.html" class="py-2 font-label text-label-lg text-light-primary">Home</a>
+        <a href="../product-catalogue/ProductCatalogue.html" class="py-2 font-label text-label-lg text-light-on-surface">Shop All Products</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="py-2 font-label text-label-lg text-light-on-surface">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="py-2 font-label text-label-lg text-light-on-surface">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="py-2 font-label text-label-lg text-light-on-surface">Washroom Hygiene</a>
+        <a href="../b2b-quotation/B2BQuotation.html" class="py-2 font-label text-label-lg text-light-on-surface">Request a Quote</a>
+        <a href="../cart-checkout/CartCheckout.html" class="py-2 font-label text-label-lg text-light-on-surface">Cart &amp; Checkout</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-1">
+    <!-- SECTION A – HERO -->
+    <section class="relative overflow-hidden bg-deep-forest">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrBujUCAnER1X1HH8gb79SsBsCDnnRFhVBumVeZl32igpPea9J1Xnzyw4TZXiw3u5tvb8A2_OUkF87koocYKnqu-bOk30bIUWQx8Pjy4fWW8PU20qHFO_hadJ6B_Fg0twQIlxIO7hFQazqNMf4R3Tg6d9TFbukzazFYKTXotoiP98jUj0jhYL6NdLzX3nEigYHwklFKBC90-r4uqWLwqQWV1iZZ0MYmhouc9avbTz8f_MPtPI0KogHMrWvI2zgj-SKreTnU" alt="Modern Dubai commercial office workspace with organized HYGIENOVO cleaning supplies and equipment" class="w-full h-[540px] lg:h-[600px] object-cover opacity-55">
+      <div class="absolute inset-0 bg-gradient-to-r from-deep-forest/95 via-deep-forest/75 to-deep-forest/20"></div>
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-[1280px] w-full mx-auto px-md lg:px-xl">
+          <div class="max-w-2xl flex flex-col gap-lg">
+            <span class="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm" data-design-text-token="label-sm">
+              HYGIENOVO • DUBAI, UAE
+            </span>
+            <h1 class="font-headline text-display-lg-mobile lg:text-display-lg text-pure-white text-balance" data-design-text-token="display-lg">
+              Everything You Need for a Cleaner Workplace.
+            </h1>
+            <p class="font-body text-body-lg text-fresh-mint max-w-prose text-pretty" data-design-text-token="body-lg">
+              Premium cleaning supplies, hygiene essentials and professional equipment for businesses across Dubai.
+            </p>
+            <div class="flex flex-wrap items-center gap-md pt-xs">
+              <a href="../product-catalogue/ProductCatalogue.html" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-sm px-lg py-3.5 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-pure-white hover:text-deep-forest transition-colors">
+                <span data-design-text-token="label-lg">Explore Products</span>
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+              </a>
+              <a href="../b2b-quotation/B2BQuotation.html" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-sm px-lg py-3.5 rounded bg-pure-white/10 text-pure-white border border-pure-white/30 font-label text-label-lg hover:bg-pure-white hover:text-deep-forest transition-colors">
+                <span data-design-text-token="label-lg">Request a Business Quote</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B – TRUST STRIP -->
+    <section class="bg-light-surface-container-lowest border-b border-light-outline-variant">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl py-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
+        <div class="flex items-center gap-md">
+          <div class="w-11 h-11 rounded-md bg-light-primary-container text-light-on-primary-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">business_center</span>
+          </div>
+          <div>
+            <h2 class="font-title text-title-sm text-light-on-surface" data-design-text-token="title-sm">Business-Focused Supply</h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Commercial pack sizes built for teams</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-md">
+          <div class="w-11 h-11 rounded-md bg-light-primary-container text-light-on-primary-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">sell</span>
+          </div>
+          <div>
+            <h2 class="font-title text-title-sm text-light-on-surface" data-design-text-token="title-sm">Competitive Bulk Pricing</h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Volume quotations in AED</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-md">
+          <div class="w-11 h-11 rounded-md bg-light-primary-container text-light-on-primary-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">local_shipping</span>
+          </div>
+          <div>
+            <h2 class="font-title text-title-sm text-light-on-surface" data-design-text-token="title-sm">Reliable Delivery</h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Scheduled dispatch across Dubai</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-md">
+          <div class="w-11 h-11 rounded-md bg-light-primary-container text-light-on-primary-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">support_agent</span>
+          </div>
+          <div>
+            <h2 class="font-title text-title-sm text-light-on-surface" data-design-text-token="title-sm">Dedicated Customer Support</h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Direct procurement assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C – SHOP BY CATEGORY -->
+    <section class="py-2xl lg:py-section">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl">
+          <div>
+            <h2 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface" data-design-text-token="display-md">Shop by Category</h2>
+            <p class="font-body text-body-lg text-light-on-surface-variant mt-xs" data-design-text-token="body-lg">Six core commercial lines curated for offices, hospitality, and facility teams.</p>
+          </div>
+          <a href="../product-catalogue/ProductCatalogue.html" class="inline-flex items-center gap-1 font-label text-label-lg text-light-primary hover:underline">
+            <span>View Full Catalogue</span>
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg items-stretch">
+          <!-- Category 1 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDP8bnK0z3mAXsLKDHObqs9pKaCkUzDdM0IdrCB06T0tXwaHkPQe8HDSaMQrUJaUklOsrRHH2mdtiimmZR1c7nWe6MBopaUdYdlgTSVqTdk-KQMZghcw77Z6IpAq43TzOVwY2sa501pvoRkRAyb7HHqa6Gr1u7ZAhSRJOx39ZSmX8u5Pnw0AT6xSDWVPZAKFZpFwRo3jmMwUHl_M3mxBaY83GQmemnsGW9SMB06Wjyx868fFof5A3fS" alt="Cleaning Chemicals 5L commercial packs" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Cleaning Chemicals</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Concentrated floor, surface, glass, and washroom formulas in 5L packs.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+
+          <!-- Category 2 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB-6LLUcjsakLgznpRuHWUaSlSTvDIrGkvBsAi_yNMgzFkSrZ6nPXoX-1B7_nE-ULK0dl0FWJnELgfELka6R6urpfOm_6YWQF0YiR-ThkHjP3sgRLZhz9rEJlVHd9jM5m7R3BD-jEJ9XcFp1ihKk5532y6k9HdJvDOwwPiW_s037UYkRhuJgVjMUwWVEQz9DnYCEnZcojRcTKVO3_d0tTiz8ZDA3fy1fDPDmn1qF0IyBTQxRS0iQAY0" alt="Commercial Cleaning Equipment" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Cleaning Equipment</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Heavy-duty mop systems, wringer buckets, trolleys, and floor care tools.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+
+          <!-- Category 3 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrC-N9rXz-EBB14w0stbiKJz6WNoeXa2Kgls6YzaBdobG_HevtWesbZaBOKnFJBNcQxYu38XksL_Wl83fa4s9n1IrS9mhytpt9_HZ6Nlj5p_bluuJ4VzgvGfVn4Ut4hpCOJ_qQie79fo9247bvZzwuk868oaORUQpdMWWGBEMZUEF_W0Rp2aEYxpxFEbIUBeEI0yjrSX03mkP-wITB4tcn7o6rUHTECrFzk5KulBFFNFAolTMlyU" alt="Washroom Hygiene Dispensers and Soap" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Washroom Hygiene</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Hand wash refills, touchless dispensers, and commercial odor control.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+
+          <!-- Category 4 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=paper" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBhJfdqEJsQIuonCnvJbYziJ35KCYw7aJPc1NSr_syPQavALI9k7NEt6k1PFhkuD6gPgEMmjVhSaYwK_Z965O14wJpDJ0ECJc_0sKVGY4_K-p7gN1FI35E6rw_BlFG8wyG5zIMOKvVr2E_v1ssaz4XzjpjOdcieXafT4UR6duOJ_RPqUHmgdz7X5iNtb_jlImz3gCGvMDe_WAjo9A7Z3oXUUnEJmmru541E26i6Q5onNfzaBQ" alt="Commercial Paper Products" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Paper Products</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Jumbo toilet rolls, C-fold hand towels, and facial tissues in bulk cases.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+
+          <!-- Category 5 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=janitorial" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrD2jh8ZKPGRXAsjRKGzHQxk8ttirav7N9pbx0l4GqoVDteKpCvts107g0ajKGKxbZjc9z0RZO4CpSEG94iZcKNHgMRQztmKueUbnfWn9UW6jWeYeyuDANVUduj3OgkwhJN04UyRGjzhF5iGoXURFoxYmS4PxSqu6XM3auL2_5alrGtwiHZg4LzerzM6qhUMW8N_SzK9Kx4QoF6jm-MbLKCHSdzVSMAQ1ntl43471flnLdw7JInFbAxLjg" alt="Janitorial Supplies and Liners" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Janitorial Supplies</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Heavy-duty garbage bags, color-coded microfiber cloths, and caddies.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+
+          <!-- Category 6 -->
+          <a href="../product-catalogue/ProductCatalogue.html?cat=safety" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden shadow-sm hover:border-light-primary hover:shadow-md transition-all flex flex-col h-full">
+            <div class="aspect-[4/3] bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAwWjrKvoSsa1TbWukYbhRhw1AFq8eGT6doV2PP0SkVfLserxdoa0FtDuBgy9Azq4K9EfRpLXfOu7jYITsc8gAaGOwZXC0tKGoexASrNphTs2P3mPrgypcaA8iZUItYgOnvmqrSaHWb3XNAoHpQ7h3UUPwhwZweXIAEUzYmQbz9oc5qkvy4CWGJ2-bDW4_ZWTMiSADGMTksxSQg6-nApwTQBf4OYTNPr0cMwSNNoYTD1BnQ7ks" alt="Commercial Safety and Protection Gear" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-surface-enter">
+            </div>
+            <div class="p-lg flex flex-col flex-1 gap-xs">
+              <h3 class="font-title text-title-lg text-light-on-surface group-hover:text-light-primary" data-design-text-token="title-lg">Safety &amp; Protection</h3>
+              <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Industrial cleaning gloves, protective eyewear, and caution signage.</p>
+              <span class="mt-auto pt-sm inline-flex items-center gap-1 font-label text-label-md text-light-primary" data-design-text-token="label-md">Explore category <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D – FEATURED PRODUCTS -->
+    <section class="py-2xl lg:py-section bg-light-surface-container-low border-y border-light-outline-variant">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl">
+          <div>
+            <h2 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface" data-design-text-token="display-md">Featured Commercial Products</h2>
+            <p class="font-body text-body-lg text-light-on-surface-variant mt-xs" data-design-text-token="body-lg">High-demand essentials with illustrative AED demo pricing.</p>
+          </div>
+          <span class="inline-flex self-start items-center gap-1.5 px-3 py-1.5 rounded-full bg-light-surface-container-lowest border border-light-outline-variant font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">
+            Demo prices shown in AED
+          </span>
+        </div>
+
+        <div id="featured-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg items-stretch">
+          <!-- Rendered by clean inline script for consistent interactive Quick View, Wishlist & Cart -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E – B2B BUSINESS SOLUTIONS -->
+    <section class="relative bg-deep-forest text-light-inverse-on-surface overflow-hidden">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl py-2xl lg:py-section grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+        <div class="lg:col-span-6 flex flex-col gap-lg">
+          <span class="inline-flex self-start px-3 py-1 rounded-full bg-pure-white/10 text-fresh-mint font-label text-label-sm" data-design-text-token="label-sm">B2B SUPPLY SOLUTIONS</span>
+          <h2 class="font-headline text-display-md-mobile lg:text-display-md text-pure-white text-balance" data-design-text-token="display-md">Your Business Deserves a Smarter Supply Partner.</h2>
+          <p class="font-body text-body-lg text-fresh-mint" data-design-text-token="body-lg">
+            HYGIENOVO supports commercial operations across Dubai with consistent stock availability, clear bulk quotations, and dedicated account coordination for:
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+            <li class="flex items-center gap-2 font-body text-body-md text-pure-white"><span class="material-symbols-outlined text-gold-accent text-[18px]">check_circle</span> Office buildings</li>
+            <li class="flex items-center gap-2 font-body text-body-md text-pure-white"><span class="material-symbols-outlined text-gold-accent text-[18px]">check_circle</span> Facility management companies</li>
+            <li class="flex items-center gap-2 font-body text-body-md text-pure-white"><span class="material-symbols-outlined text-gold-accent text-[18px]">check_circle</span> Cleaning contractors</li>
+            <li class="flex items-center gap-2 font-body text-body-md text-pure-white"><span class="material-symbols-outlined text-gold-accent text-[18px]">check_circle</span> Hotels and hospitality</li>
+            <li class="flex items-center gap-2 font-body text-body-md text-pure-white"><span class="material-symbols-outlined text-gold-accent text-[18px]">check_circle</span> Commercial properties</li>
+          </ul>
+          <div class="pt-xs">
+            <a href="../b2b-quotation/B2BQuotation.html" class="inline-flex items-center justify-center gap-sm px-lg py-3.5 rounded bg-pure-white text-deep-forest font-label text-label-lg hover:bg-fresh-mint transition-colors">
+              <span data-design-text-token="label-lg">Become a Business Customer</span>
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDdK0TwU39oQOi0YJ0q1V4En1qurvF9AW4l70H5p3Sl19moG2nWJPabDJGoe_3xnKh7uILnI6DrIPY1OhDvdVQiBNouAXywu3sQiC4b_KOjaBec4tkaeE8-a7FyFdMF4d8M5MHk6ZZYHxyUy9r_iXJwusPtuz3efD5uQieQ9mrE3IQLN_z_USGQAf_-EqkYysjaUlj_QqFHX0wpxVdeN1GslYr88kTXCPNeEpiQbAXW8B_vXUqfqeP62FmkwQ" alt="Modern Dubai commercial tower atrium" class="w-full h-[360px] lg:h-[420px] object-cover rounded-lg border border-pure-white/15 shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION F – BULK ORDERING BANNER -->
+    <section class="py-2xl">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl">
+        <div class="bg-light-primary-container rounded-lg border border-light-outline-variant p-xl lg:p-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-lg">
+          <div class="max-w-2xl flex flex-col gap-xs">
+            <h2 class="font-headline text-headline-lg text-light-on-primary-container" data-design-text-token="headline-lg">Ordering for Multiple Buildings?</h2>
+            <p class="font-body text-body-lg text-light-on-primary-container" data-design-text-token="body-lg">
+              Get customised quotations, bulk pricing and convenient recurring supply arrangements.
+            </p>
+          </div>
+          <a href="../b2b-quotation/B2BQuotation.html" class="inline-flex items-center justify-center gap-sm px-lg py-3.5 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors shrink-0">
+            <span data-design-text-token="label-lg">Request Bulk Pricing</span>
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">request_quote</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G – WHY HYGIENOVO -->
+    <section class="py-2xl lg:py-section bg-light-surface-container-lowest border-y border-light-outline-variant">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl">
+        <div class="max-w-xl mb-xl">
+          <h2 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface" data-design-text-token="display-md">Why HYGIENOVO</h2>
+          <p class="font-body text-body-lg text-light-on-surface-variant mt-xs" data-design-text-token="body-lg">Built for procurement teams who value speed, clarity, and dependable stock.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg items-stretch">
+          <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface rounded-md border border-light-outline-variant p-lg flex flex-col gap-sm">
+            <span class="material-symbols-outlined text-light-primary text-[28px]" aria-hidden="true">payments</span>
+            <h3 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Competitive Pricing</h3>
+            <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Transparent AED pricing with tailored volume rates for recurring commercial orders.</p>
+          </article>
+          <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface rounded-md border border-light-outline-variant p-lg flex flex-col gap-sm">
+            <span class="material-symbols-outlined text-light-primary text-[28px]" aria-hidden="true">verified</span>
+            <h3 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Carefully Selected Products</h3>
+            <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Commercial-grade formulations and durable equipment chosen for daily facility workloads.</p>
+          </article>
+          <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface rounded-md border border-light-outline-variant p-lg flex flex-col gap-sm">
+            <span class="material-symbols-outlined text-light-primary text-[28px]" aria-hidden="true">bolt</span>
+            <h3 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Convenient Ordering</h3>
+            <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Order online in minutes or submit a multi-line quotation request for rapid approval.</p>
+          </article>
+          <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface rounded-md border border-light-outline-variant p-lg flex flex-col gap-sm">
+            <span class="material-symbols-outlined text-light-primary text-[28px]" aria-hidden="true">handshake</span>
+            <h3 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Business-Oriented Service</h3>
+            <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Dedicated UAE B2B support for consolidated deliveries, TRN invoicing, and reorders.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION H – BRAND STORY -->
+    <section id="brand-story" class="py-2xl lg:py-section">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+        <div class="lg:col-span-7 flex flex-col gap-md">
+          <span class="font-label text-label-sm text-light-primary uppercase tracking-wider" data-design-text-token="label-sm">OUR MISSION</span>
+          <h2 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface text-balance" data-design-text-token="display-md">Making Professional Cleaning Supply Simple.</h2>
+          <p class="font-body text-body-lg text-light-on-surface-variant max-w-prose text-pretty" data-design-text-token="body-lg">
+            Managing hygiene supplies across commercial buildings shouldn&#39;t require chasing multiple vendors or opaque spreadsheets. HYGIENOVO brings essential chemicals, washroom consumables, and commercial equipment into one streamlined Dubai procurement platform—helping facility teams stay stocked with zero friction.
+          </p>
+          <div class="pt-xs">
+            <a href="../b2b-quotation/B2BQuotation.html" class="inline-flex items-center gap-sm px-lg py-3 rounded border border-light-outline-variant bg-light-surface-container-lowest text-light-on-surface font-label text-label-lg hover:border-light-primary hover:text-light-primary transition-colors">
+              <span data-design-text-token="label-lg">Discover Hygienovo</span>
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-xl flex flex-col gap-md shadow-sm">
+          <p class="font-headline text-headline-md text-light-secondary" data-design-text-token="headline-md">&#34;A Cleaner Standard for Every Space.&#34;</p>
+          <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">
+            Serving offices, hospitality venues, educational campuses, and commercial properties across Dubai, United Arab Emirates.
+          </p>
+          <div class="border-t border-light-outline-variant pt-md flex items-center justify-between">
+            <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">B2B &amp; B2C E-Commerce</span>
+            <span class="font-label text-label-sm text-light-primary" data-design-text-token="label-sm">Dubai, UAE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION I – NEWSLETTER -->
+    <section class="py-2xl bg-light-surface-container-low border-t border-light-outline-variant">
+      <div class="max-w-[1280px] mx-auto px-md lg:px-xl flex flex-col lg:flex-row lg:items-center justify-between gap-lg">
+        <div class="max-w-lg">
+          <h2 class="font-headline text-headline-lg text-light-on-surface" data-design-text-token="headline-lg">Stay Ahead of the Clean.</h2>
+          <p class="font-body text-body-md text-light-on-surface-variant mt-xs" data-design-text-token="body-md">Receive new commercial product releases and seasonal B2B supply updates.</p>
+        </div>
+        <form id="newsletter-form" class="flex flex-col sm:flex-row gap-sm w-full lg:w-auto">
+          <input type="email" required placeholder="Enter your business email" class="w-full sm:w-80 rounded border border-light-outline-variant bg-light-surface-container-lowest px-md py-3 font-body text-body-md text-light-on-surface placeholder:text-light-outline focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          <button type="submit" class="px-lg py-3 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors whitespace-nowrap">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION J – FOOTER -->
+  <footer id="footer" class="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl py-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
+      <div class="flex flex-col gap-md">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded bg-light-primary text-pure-white flex items-center justify-center">
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">eco</span>
+          </span>
+          <span class="font-headline text-title-lg text-pure-white font-bold">HYGIENOVO</span>
+        </div>
+        <p class="font-body text-body-sm text-fresh-mint" data-design-text-token="body-sm">
+          A Cleaner Standard for Every Space. Commercial cleaning supplies, washroom hygiene, and equipment supplier in Dubai, United Arab Emirates.
+        </p>
+        <p class="font-body text-body-sm text-fresh-mint/80" data-design-text-token="body-sm">
+          Dubai, United Arab Emirates
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-title text-title-sm text-pure-white mb-md" data-design-text-token="title-sm">Product Categories</h3>
+        <ul class="flex flex-col gap-xs font-body text-body-sm text-fresh-mint">
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="hover:text-pure-white">Cleaning Chemicals</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="hover:text-pure-white">Cleaning Equipment</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="hover:text-pure-white">Washroom Hygiene</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="hover:text-pure-white">Paper Products</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=janitorial" class="hover:text-pure-white">Janitorial Supplies</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=safety" class="hover:text-pure-white">Safety &amp; Protection</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-title text-title-sm text-pure-white mb-md" data-design-text-token="title-sm">Customer Support</h3>
+        <ul class="flex flex-col gap-xs font-body text-body-sm text-fresh-mint">
+          <li><a href="#brand-story" class="hover:text-pure-white">About Us</a></li>
+          <li><a href="../b2b-quotation/B2BQuotation.html" class="hover:text-pure-white">Request a B2B Quote</a></li>
+          <li><a href="../cart-checkout/CartCheckout.html" class="hover:text-pure-white">Shipping Policy</a></li>
+          <li><a href="../cart-checkout/CartCheckout.html" class="hover:text-pure-white">Returns &amp; Refund Policy</a></li>
+          <li><a href="#footer" class="hover:text-pure-white">Privacy Policy</a></li>
+          <li><a href="#footer" class="hover:text-pure-white">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-md">
+        <h3 class="font-title text-title-sm text-pure-white" data-design-text-token="title-sm">Direct B2B Desk</h3>
+        <a href="https://wa.me/97140000000" class="inline-flex items-center justify-center gap-2 px-md py-2.5 rounded bg-light-primary text-pure-white font-label text-label-md hover:bg-pure-white hover:text-deep-forest transition-colors">
+          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">chat</span>
+          <span>WhatsApp Procurement</span>
+        </a>
+        <div class="flex items-center gap-md text-fresh-mint font-body text-body-sm">
+          <a href="#footer" class="hover:text-pure-white">LinkedIn</a>
+          <a href="#footer" class="hover:text-pure-white">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-pure-white/10 py-md px-md lg:px-xl text-center">
+      <p class="font-body text-body-sm text-fresh-mint/80">© 2026 HYGIENOVO Commercial Supply • Dubai, UAE • Demo E-Commerce Preview</p>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div id="quick-view-modal" class="hidden fixed inset-0 z-50 bg-charcoal/50 flex items-center justify-center p-md">
+    <div class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant max-w-2xl w-full p-lg lg:p-xl shadow-xl relative grid grid-cols-1 md:grid-cols-2 gap-lg">
+      <button id="qv-close" type="button" aria-label="Close quick view" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-light-surface-container flex items-center justify-center hover:bg-light-primary-container">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+      <img id="qv-img" src alt class="w-full aspect-square object-cover rounded-md bg-light-surface-container-low">
+      <div class="flex flex-col gap-sm">
+        <span id="qv-cat" class="font-label text-label-sm text-light-primary uppercase tracking-wider"></span>
+        <h3 id="qv-title" class="font-headline text-headline-sm text-light-on-surface"></h3>
+        <p id="qv-pack" class="font-body text-body-sm text-light-on-surface-variant"></p>
+        <p id="qv-price" class="font-title text-title-lg text-light-secondary tabular-nums mt-xs"></p>
+        <p class="font-body text-body-sm text-light-on-surface-variant">Demo price • Available for Dubai &amp; UAE delivery</p>
+        <div class="mt-auto pt-md flex flex-col gap-sm">
+          <button id="qv-add" type="button" class="w-full py-2.5 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors">Add to Cart</button>
+          <a href="../product-detail/ProductDetail.html" class="w-full py-2.5 rounded border border-light-outline-variant text-center font-label text-label-md text-light-on-surface hover:border-light-primary">View Full Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 bg-deep-forest text-pure-white px-lg py-3 rounded-md shadow-lg font-label text-label-md"></div>
+
+  <script data-stitch-original-script="417a97145e6f9314===../../images/prod_floor_cleaner.jpg|||385969c4006e86b6===../../images/cat_chemicals.jpg|||7dece2d207a99ce7===../../images/cat_washroom.jpg|||f58ebc6ef516acf2===../../images/cat_janitorial.jpg|||734c601af7b32c6c===../../images/prod_microfiber_cloths.jpg|||bc99951d58f1ae67===../../images/prod_mop_set.jpg|||385969c4006e86b6===../../images/cat_chemicals.jpg|||5ccc69215115b163===../../images/prod_nitrile_gloves.jpg">
+    (function () {
+      var products = [
+        { id: 1, name: "Commercial Floor Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: "68.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrBQaQP7qtvkWMjVjNBTRv6pz5cMOj2RESNhtmRh30XIm_N8kbrStNXz5WmFpj4yD70J_qHRgPL6iyhAzkIS-nQzxTGrq_6yLQfPqbZKRSRCBW8gKZuXoS6D2Nbi02QiEzB1d4_r1MNi8PlPVg0nu_9fmtaprmNk8OgEhlHwQh6_eSnanvR-dq5Jm5hH_1z2RT_pJySoBOVP0COtZw3rmMp8IEJoDoDcQqEYHiex0th_07dLGiUfS4QOSSzVTh0" },
+        { id: 2, name: "Multipurpose Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: "54.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrDP8bnK0z3mAXsLKDHObqs9pKaCkUzDdM0IdrCB06T0tXwaHkPQe8HDSaMQrUJaUklOsrRHH2mdtiimmZR1c7nWe6MBopaUdYdlgTSVqTdk-KQMZghcw77Z6IpAq43TzOVwY2sa501pvoRkRAyb7HHqa6Gr1u7ZAhSRJOx39ZSmX8u5Pnw0AT6xSDWVPZAKFZpFwRo3jmMwUHl_M3mxBaY83GQmemnsGW9SMB06Wjyx868fFof5A3fS" },
+        { id: 3, name: "Liquid Hand Wash – 5L", cat: "Washroom Hygiene", pack: "5L Refill", price: "49.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrC-N9rXz-EBB14w0stbiKJz6WNoeXa2Kgls6YzaBdobG_HevtWesbZaBOKnFJBNcQxYu38XksL_Wl83fa4s9n1IrS9mhytpt9_HZ6Nlj5p_bluuJ4VzgvGfVn4Ut4hpCOJ_qQie79fo9247bvZzwuk868oaORUQpdMWWGBEMZUEF_W0Rp2aEYxpxFEbIUBeEI0yjrSX03mkP-wITB4tcn7o6rUHTECrFzk5KulBFFNFAolTMlyU" },
+        { id: 4, name: "Heavy Duty Garbage Bags – Pack", cat: "Janitorial Supplies", pack: "Roll of 50 (80L)", price: "38.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrD2jh8ZKPGRXAsjRKGzHQxk8ttirav7N9pbx0l4GqoVDteKpCvts107g0ajKGKxbZjc9z0RZO4CpSEG94iZcKNHgMRQztmKueUbnfWn9UW6jWeYeyuDANVUduj3OgkwhJN04UyRGjzhF5iGoXURFoxYmS4PxSqu6XM3auL2_5alrGtwiHZg4LzerzM6qhUMW8N_SzK9Kx4QoF6jm-MbLKCHSdzVSMAQ1ntl43471flnLdw7JInFbAxLjg" },
+        { id: 5, name: "Microfiber Cleaning Cloth – Pack of 10", cat: "Janitorial Supplies", pack: "Pack of 10", price: "45.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrBTz4fiYrn7hYVwMl-gvbYe2ybz4t66CMzjWfltjJhn3B23ZwdzDRtQX-z57PvTde9zri8g0xEKfhtDNMHIp5wquT1ZjKTD-D6rDUWxfvLIeuf1MV9NZoLs0UaZBXLRVpD5YtoBZMhd5QrLjO_SuvfuBPNTNxngLElQ5O0hx_yUE2zrWiLRmNQUong1Ro88r3azyb4mDR39-88PKmGWAGMP_xh0Ke3cBr7cwEk9N20bjIOq-DfUtrzsJhm4jlH3J1M" },
+        { id: 6, name: "Professional Mop & Bucket Set", cat: "Cleaning Equipment", pack: "Complete Unit", price: "195.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrCAd0GM1-hzCwENIrik5DuaypkkY-yWbjrt8MtkTpg96e_r6-8LSWvlj0oiXYiE8ZNJJS_DC8v_gUWy9GSeBw2QdXCgK5WW8YMsmSea5yUnBJ2Ku28Yr_G8pxSzDbKMWxl_v1Hb0L_M0unhYVZ0e8MZiNeg9TLYlrNlAhNRY3uasp0DtPn9JlEiCgy1TsNN6im3-tdZLtDtcI6sAau7WIeDPbRgBVV8pExLM6txF97qjdWaJpKBOQ" },
+        { id: 7, name: "Toilet Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: "58.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrDP8bnK0z3mAXsLKDHObqs9pKaCkUzDdM0IdrCB06T0tXwaHkPQe8HDSaMQrUJaUklOsrRHH2mdtiimmZR1c7nWe6MBopaUdYdlgTSVqTdk-KQMZghcw77Z6IpAq43TzOVwY2sa501pvoRkRAyb7HHqa6Gr1u7ZAhSRJOx39ZSmX8u5Pnw0AT6xSDWVPZAKFZpFwRo3jmMwUHl_M3mxBaY83GQmemnsGW9SMB06Wjyx868fFof5A3fS" },
+        { id: 8, name: "Industrial Cleaning Gloves", cat: "Safety & Protection", pack: "Box of 50 Pairs", price: "32.00", stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrDIJiN4Swvm_9WqvGl4Ap8ZtpIUecNrkKnJ04bXcKo53a1QDEk5J1rkyqtfhZNyoCtm2zgoHbc-NC0NfADh0w9Hd732QYeBlZVhmDHIst7RWqdWg-ciNfwCOxhu2u0Ji08iOy4cX3zgoHqScI6qxlos-Fya7qNu9GbRPUj0KwnULu1KK21ja_YGRXSTRK8-ildz2t_R1WnRFdB8qFxqyU7XNHH53OeLgVPAnBXmPHixNk6T04et6PC-2rTk_CFi" }
+      ];
+
+      var grid = document.getElementById("featured-products-grid");
+      var cartCountEl = document.getElementById("header-cart-count");
+      var cartCount = 3;
+      var toastEl = document.getElementById("toast");
+
+      function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.remove("hidden");
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(function () { toastEl.classList.add("hidden"); }, 2400);
+      }
+
+      grid.innerHTML = products.map(function (p) {
+        return '<article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">' +
+          '<div class="relative bg-light-surface-container-low aspect-square overflow-hidden">' +
+            '<a href="../product-detail/ProductDetail.html"><img src="' + p.img + '" alt="' + p.name + '" class="w-full h-full object-cover"></a>' +
+            '<button type="button" data-wish="' + p.id + '" aria-label="Save to wishlist" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-light-surface-container-lowest/95 border border-light-outline-variant flex items-center justify-center text-light-on-surface-variant hover:text-light-primary">' +
+              '<span class="material-symbols-outlined text-[18px]">favorite</span>' +
+            '</button>' +
+          '</div>' +
+          '<div class="p-md flex flex-col flex-1 gap-xs">' +
+            '<span class="font-label text-label-sm text-light-primary uppercase tracking-wider">' + p.cat + '</span>' +
+            '<a href="../product-detail/ProductDetail.html" class="font-title text-title-md text-light-on-surface hover:text-light-primary">' + p.name + '</a>' +
+            '<p class="font-body text-body-sm text-light-on-surface-variant">' + p.pack + ' • <span class="text-light-primary font-medium">' + p.stock + '</span></p>' +
+            '<div class="mt-auto pt-sm flex items-baseline justify-between gap-sm">' +
+              '<span class="font-title text-title-lg text-light-secondary tabular-nums">AED ' + p.price + '</span>' +
+              '<span class="font-body text-body-sm text-light-on-surface-variant">Demo price</span>' +
+            '</div>' +
+            '<div class="pt-sm flex items-center gap-sm">' +
+              '<button type="button" data-add="' + p.id + '" class="flex-1 py-2 px-3 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary transition-colors">Add to Cart</button>' +
+              '<button type="button" data-qv="' + p.id + '" class="py-2 px-3 rounded border border-light-outline-variant text-light-on-surface font-label text-label-md hover:border-light-primary">Quick View</button>' +
+            '</div>' +
+          '</div>' +
+        '</article>';
+      }).join("");
+
+      grid.addEventListener("click", function (e) {
+        var addBtn = e.target.closest("[data-add]");
+        var qvBtn = e.target.closest("[data-qv]");
+        var wishBtn = e.target.closest("[data-wish]");
+        if (addBtn) {
+          cartCount += 1;
+          cartCountEl.textContent = String(cartCount);
+          var prod = products.find(function (x) { return String(x.id) === addBtn.getAttribute("data-add"); });
+          showToast("Added " + prod.name + " to cart");
+        } else if (qvBtn) {
+          var item = products.find(function (x) { return String(x.id) === qvBtn.getAttribute("data-qv"); });
+          document.getElementById("qv-img").src = item.img;
+          document.getElementById("qv-img").alt = item.name;
+          document.getElementById("qv-cat").textContent = item.cat;
+          document.getElementById("qv-title").textContent = item.name;
+          document.getElementById("qv-pack").textContent = item.pack + " • " + item.stock;
+          document.getElementById("qv-price").textContent = "AED " + item.price;
+          document.getElementById("quick-view-modal").classList.remove("hidden");
+        } else if (wishBtn) {
+          wishBtn.classList.toggle("text-light-primary");
+          showToast("Updated saved wishlist");
+        }
+      });
+
+      document.getElementById("qv-close").addEventListener("click", function () {
+        document.getElementById("quick-view-modal").classList.add("hidden");
+      });
+      document.getElementById("qv-add").addEventListener("click", function () {
+        cartCount += 1;
+        cartCountEl.textContent = String(cartCount);
+        document.getElementById("quick-view-modal").classList.add("hidden");
+        showToast("Added item to cart");
+      });
+
+      document.getElementById("search-toggle-btn").addEventListener("click", function () {
+        document.getElementById("global-search-bar").classList.toggle("hidden");
+      });
+      document.getElementById("mobile-menu-btn").addEventListener("click", function () {
+        document.getElementById("mobile-drawer").classList.remove("hidden");
+      });
+      document.getElementById("mobile-drawer-close").addEventListener("click", function () {
+        document.getElementById("mobile-drawer").classList.add("hidden");
+      });
+      document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        showToast("Subscribed to HYGIENOVO updates (demo)");
+        e.target.reset();
+      });
+    })();
+  </script>
+
+
+</body></html>
+
+<!-- HYGIENOVO — Product Catalogue -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalogue — HYGIENOVO</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-forest': '#123D32',
+        'primary-green': '#1C6B52',
+        'fresh-mint': '#DDF2E8',
+        'off-white': '#F8FAF7',
+        'pure-white': '#FFFFFF',
+        'charcoal': '#202824',
+        'muted-grey': '#77817B',
+        'gold-accent': '#C5A46D',
+        'success': '#1C6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#8F6100',
+        'on-warning': '#FFFFFF',
+        'light-primary': '#1C6B52',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#DDF2E8',
+        'light-on-primary-container': '#123D32',
+        'light-secondary': '#123D32',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EAF3EC',
+        'light-on-secondary-container': '#123D32',
+        'light-tertiary': '#755A2A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEED8',
+        'light-on-tertiary-container': '#271900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAF7',
+        'light-on-background': '#202824',
+        'light-surface': '#F8FAF7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F6F2',
+        'light-surface-container': '#E8EFEA',
+        'light-surface-container-high': '#E0E9E3',
+        'light-surface-container-highest': '#D6E0DA',
+        'light-on-surface': '#202824',
+        'light-on-surface-variant': '#535D57',
+        'light-outline': '#77817B',
+        'light-outline-variant': '#D5DFD8',
+        'light-inverse-surface': '#123D32',
+        'light-inverse-on-surface': '#FFFFFF',
+        'light-inverse-primary': '#8BD5B7',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
+        'section': '80px',
+      },
+      fontFamily: {
+        'display': ['"Manrope"', 'sans-serif'],
+        'headline': ['"Manrope"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '58px', letterSpacing: '-1.0px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-md': ['40px', { lineHeight: '46px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-deep-forest text-light-inverse-on-surface py-2 px-md text-center">
+    <p class="font-body text-body-sm" data-design-text-token="body-sm">
+      Dubai &amp; UAE Commercial Supply • All catalog prices shown in AED are demo pricing for preview purposes
+    </p>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl h-20 flex items-center justify-between gap-md">
+      <div class="flex items-center gap-sm">
+        <button id="mobile-filter-toggle" type="button" aria-label="Toggle filters" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined">tune</span>
+        </button>
+        <a href="../homepage/Homepage.html" class="flex items-center gap-2.5 shrink-0">
+          <span class="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
+            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">eco</span>
+          </span>
+          <span class="font-headline text-title-lg tracking-tight text-light-secondary font-bold">HYGIENOVO</span>
+        </a>
+      </div>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-5">
+        <a href="../homepage/Homepage.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Home</a>
+        <a href="../product-catalogue/ProductCatalogue.html" class="font-label text-label-md text-light-primary font-semibold whitespace-nowrap">Shop</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Washroom Hygiene</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Office Supplies</a>
+        <a href="../homepage/Homepage.html#brand-story" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">About Us</a>
+        <a href="#footer" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="../b2b-quotation/B2BQuotation.html" aria-label="Business account" class="hidden sm:inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]">person</span>
+        </a>
+        <button type="button" aria-label="Wishlist" class="hidden sm:inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+        <a href="../cart-checkout/CartCheckout.html" aria-label="Shopping cart" class="relative inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+          <span id="header-cart-count" class="absolute -top-0.5 -right-0.5 inline-flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-light-primary text-light-on-primary font-label text-label-sm tabular-nums">3</span>
+        </a>
+        <a href="../b2b-quotation/B2BQuotation.html" class="hidden sm:inline-flex items-center justify-center px-md py-2.5 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary transition-colors whitespace-nowrap">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1280px] w-full mx-auto px-md lg:px-xl py-xl">
+    <!-- Breadcrumb & Title -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl pb-lg border-b border-light-outline-variant">
+      <div>
+        <nav aria-label="Breadcrumb" class="font-body text-body-sm text-light-on-surface-variant mb-xs">
+          <a href="../homepage/Homepage.html" class="hover:text-light-primary">Home</a> / <span class="text-light-on-surface">Product Catalogue</span>
+        </nav>
+        <h1 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface" data-design-text-token="display-md">Commercial Hygiene &amp; Cleaning Catalogue</h1>
+      </div>
+      <span class="inline-flex self-start items-center px-3 py-1.5 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm">
+        Demo prices in AED • Bulk quotes available
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+      <!-- Left Sidebar Filters -->
+      <aside id="filter-sidebar" class="hidden lg:block lg:col-span-3 bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg flex flex-col gap-lg">
+        <div class="flex items-center justify-between">
+          <h2 class="font-title text-title-md text-light-on-surface">Filters</h2>
+          <button id="reset-filters" type="button" class="font-label text-label-sm text-light-primary hover:underline">Reset all</button>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="border-t border-light-outline-variant pt-md">
+          <h3 class="font-label text-label-md text-light-on-surface mb-sm">Product Category</h3>
+          <div class="flex flex-col gap-xs font-body text-body-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Cleaning Chemicals" checked> Cleaning Chemicals</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Cleaning Equipment" checked> Cleaning Equipment</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Washroom Hygiene" checked> Washroom Hygiene</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Paper Products" checked> Paper Products</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Janitorial Supplies" checked> Janitorial Supplies</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="cat-filter rounded text-light-primary focus:ring-light-primary" value="Safety &amp; Protection" checked> Safety &amp; Protection</label>
+          </div>
+        </div>
+
+        <!-- Brand -->
+        <div class="border-t border-light-outline-variant pt-md">
+          <h3 class="font-label text-label-md text-light-on-surface mb-sm">Brand</h3>
+          <div class="flex flex-col gap-xs font-body text-body-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-light-primary" checked> HYGIENOVO Pro</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-light-primary" checked> CleanTech Commercial</label>
+          </div>
+        </div>
+
+        <!-- Pack Size -->
+        <div class="border-t border-light-outline-variant pt-md">
+          <h3 class="font-label text-label-md text-light-on-surface mb-sm">Pack Size</h3>
+          <div class="flex flex-wrap gap-xs">
+            <span class="px-2.5 py-1 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-sm">5L Jerrycan</span>
+            <span class="px-2.5 py-1 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-sm">Pack of 10</span>
+            <span class="px-2.5 py-1 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-sm">Box of 50</span>
+            <span class="px-2.5 py-1 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-sm">Bulk Case</span>
+          </div>
+        </div>
+
+        <!-- Price Range -->
+        <div class="border-t border-light-outline-variant pt-md">
+          <h3 class="font-label text-label-md text-light-on-surface mb-sm">Price Range (AED)</h3>
+          <input id="price-max" type="range" min="30" max="250" value="250" class="w-full accent-light-primary">
+          <div class="flex justify-between font-body text-body-sm text-light-on-surface-variant tabular-nums">
+            <span>AED 0</span>
+            <span id="price-max-label">Up to AED 250</span>
+          </div>
+        </div>
+
+        <!-- Availability & Application -->
+        <div class="border-t border-light-outline-variant pt-md">
+          <h3 class="font-label text-label-md text-light-on-surface mb-sm">Availability</h3>
+          <label class="flex items-center gap-2 font-body text-body-sm"><input type="checkbox" class="rounded text-light-primary" checked> In Stock (Dubai Dispatch)</label>
+        </div>
+      </aside>
+
+      <!-- Main Catalogue Column -->
+      <div class="lg:col-span-9 flex flex-col gap-lg">
+        <!-- Toolbar: Search, Sort, Grid/List Toggle -->
+        <div class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-md flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+          <div class="relative flex-1">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-light-on-surface-variant text-[18px]">search</span>
+            <input id="cat-search" type="search" placeholder="Search products, pack sizes, or SKU..." class="w-full rounded border border-light-outline-variant bg-light-surface pl-10 pr-md py-2 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </div>
+          <div class="flex items-center gap-sm">
+            <select id="cat-sort" class="rounded border border-light-outline-variant bg-light-surface px-3 py-2 font-label text-label-md text-light-on-surface focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest</option>
+              <option value="bestselling">Best Selling</option>
+            </select>
+            <div class="inline-flex rounded border border-light-outline-variant overflow-hidden">
+              <button id="view-grid-btn" type="button" aria-label="Grid view" class="px-2.5 py-2 bg-light-primary text-light-on-primary">
+                <span class="material-symbols-outlined text-[18px]">grid_view</span>
+              </button>
+              <button id="view-list-btn" type="button" aria-label="List view" class="px-2.5 py-2 bg-light-surface-container-lowest text-light-on-surface hover:bg-light-surface-container">
+                <span class="material-symbols-outlined text-[18px]">view_list</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <p id="result-count" class="font-body text-body-sm text-light-on-surface-variant">Showing 9 commercial products</p>
+          <a href="../b2b-quotation/B2BQuotation.html" class="font-label text-label-md text-light-primary hover:underline">Need pallet pricing? Request Bulk Quote →</a>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="catalogue-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg items-stretch"></div>
+
+        <!-- Pagination -->
+        <div class="pt-md flex items-center justify-between border-t border-light-outline-variant">
+          <span class="font-body text-body-sm text-light-on-surface-variant">Page 1 of 2 (Demo Catalogue)</span>
+          <div class="flex items-center gap-xs">
+            <button type="button" class="px-3 py-1.5 rounded border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-md text-light-on-surface-variant">Previous</button>
+            <button type="button" class="px-3 py-1.5 rounded bg-light-primary text-light-on-primary font-label text-label-md">1</button>
+            <button type="button" class="px-3 py-1.5 rounded border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-md text-light-on-surface hover:border-light-primary">2</button>
+            <button type="button" class="px-3 py-1.5 rounded border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-md text-light-on-surface hover:border-light-primary">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10 mt-2xl">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl py-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
+      <div class="flex flex-col gap-md">
+        <span class="font-headline text-title-lg text-pure-white font-bold">HYGIENOVO</span>
+        <p class="font-body text-body-sm text-fresh-mint">A Cleaner Standard for Every Space. Dubai, United Arab Emirates.</p>
+      </div>
+      <div>
+        <h3 class="font-title text-title-sm text-pure-white mb-md">Categories</h3>
+        <ul class="flex flex-col gap-xs font-body text-body-sm text-fresh-mint">
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=chemicals">Cleaning Chemicals</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=equipment">Cleaning Equipment</a></li>
+          <li><a href="../product-catalogue/ProductCatalogue.html?cat=washroom">Washroom Hygiene</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-title text-title-sm text-pure-white mb-md">Support</h3>
+        <ul class="flex flex-col gap-xs font-body text-body-sm text-fresh-mint">
+          <li><a href="../b2b-quotation/B2BQuotation.html">Request a B2B Quote</a></li>
+          <li><a href="../cart-checkout/CartCheckout.html">Shipping &amp; Returns</a></li>
+          <li><a href="#footer">Privacy &amp; Terms</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-md">
+        <h3 class="font-title text-title-sm text-pure-white">WhatsApp Desk</h3>
+        <a href="https://wa.me/97140000000" class="inline-flex items-center justify-center gap-2 px-md py-2.5 rounded bg-light-primary text-pure-white font-label text-label-md">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp Procurement</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 bg-deep-forest text-pure-white px-lg py-3 rounded-md shadow-lg font-label text-label-md"></div>
+
+  <script data-stitch-original-script="51a3bb7af3fd3880===../../images/prod_floor_cleaner.jpg|||4b912697d0d73f52===../../images/cat_chemicals.jpg|||2b031e804485f815===../../images/cat_washroom.jpg|||c9a5407b1cf08814===../../images/cat_janitorial.jpg|||20042aaa81aab465===../../images/prod_microfiber_cloths.jpg|||ea81fe4d23e3f1f7===../../images/prod_mop_set.jpg|||4b912697d0d73f52===../../images/cat_chemicals.jpg|||0d87a2372b5afaa3===../../images/prod_nitrile_gloves.jpg|||c99d6ac94216487a===../../images/cat_paper.jpg">
+    (function () {
+      var items = [
+        { id: 1, name: "Commercial Floor Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: 68, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrBPnQLR6-ubm5Wk_uCnniZO2MPN-grUkAArrZZT1MM_HvGswN6O8K9YE_cfdYHR5tBRpjt9yFVCrLXYQvqpscTu2Q_DXQhoP3ialtQ_qEmNbXmyuwqJsP0T6TOiZ6vDN1_Pe4IgP8X-aqOxwrhzkAVj0oLHdEy1dK-qzuBBpzbetquYap6Vp6Pcw2LM_nCStL8SB6lhNKXVdXAWcbAZWeyTIdUdnfioPygcux9rOoEll1RsTcM1PyDQv_KjMZY" },
+        { id: 2, name: "Multipurpose Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: 54, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrAAxytCa6OcMKz2WNulXpQtg3hAX-PMbAnUHTOnogAGlmAee0VOIuWorBDptod3Sn9auoo-4dim_m_ZCp6SBa3jCuCBSiZsVZNno8AfP4FSaN5Zv0DT5OcxptWYQSkb37lZo6qNhU4Nbf1SYg_o9NnTFBRlWITAD4cH6fNbkBtdYYy6vzTHS-r5XB3PjaThx5Med3LGRA9B8ylXgy4_fO9XJ20gzVPU-8FUnXo2W5x6YVLSxbaNdMry" },
+        { id: 3, name: "Liquid Hand Wash – 5L", cat: "Washroom Hygiene", pack: "5L Refill", price: 49, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrBhYFCZr3PmM2WTiA1lMKKgwEAUCnVroQ-RKeQMsXgvoaePTdys8dO1ap3XRAbTUxqkh7id69JoFWMqJ2RovjQ_zZMvgjcYi9m-M7GdaOUaDjRYQy-26MBBBSejCuGsN6AupqA6raHj8kltBtQmdk3grPm5zVnk5b4Oj8g4aJ5VlmH8XzQHzXLDPVKBm0_dk0LIRm1G8bzGp4Yj_6ea2xeoFIz8mbabErOIZk6Aju-e8-Vuy4ox" },
+        { id: 4, name: "Heavy Duty Garbage Bags – Pack", cat: "Janitorial Supplies", pack: "Roll of 50 (80L)", price: 38, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrDPfHHhCKWxaNFE1YIVPnz6uxwD0zMxjKTX6DaklYeJedAikD-DoeaASW3OEdi2h5kFD3rq3N6cuCXRfio0EpzhoTYYJ3bmwA3eQHemEIi2Wfnlsj4kGtZHqabEJ7V01MfxI_oZEnhtyOoaAnMk7qdT9QfLUGT1gIPhms1z6F8jl8n9zsiWb_mAq5yhISuxifPlkg8t7jvDzUDTWz5vfSbWB9i8uxgFjZ20lS1Yv2A5m2C_RuEgXXSG6Q" },
+        { id: 5, name: "Microfiber Cleaning Cloth – Pack of 10", cat: "Janitorial Supplies", pack: "Pack of 10", price: 45, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrCqe9qNanm3DHw3822mKYuYfnXXpwbiQbxphn_mt3eh_J4AyLvlg2atVBfmsmCpuSwFG1HFNMcebjBpD-S5pImm0i9nFFA0baPRnroHLPmHmKwicadEU2wvEh7tsVXpvFF9jFs4AeWDUmhomzaG7rAkuKSyvStbiye56RVRAcyvCi6amewab-Bz3tE2bVYTPI7JaV_stuyFs1CCSEFCrLCRn5Zx9wp7-z2Fg_zD3la4HFyhhKaDvm6nLnC7ylJMmgo" },
+        { id: 6, name: "Professional Mop & Bucket Set", cat: "Cleaning Equipment", pack: "Complete Unit", price: 195, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrAcjHT6jlUU-BG6xIRAPxj-WoaQu31zYQE3Tn21j0JYctSU98akziF4iF5msbVkJoHfBzxoDAyMLHSb2PmJfRyqP7WvGKODuIPkArbdmTiJ9dELTubOLd-M84sqFw1-uA5PcxPwP-qfjUx4OZ5VFtQSY8LJgAu5SLQ7PywBcY3a_rA7-SF7ChU5XRUy61fGzfqjU6B78NcxJx3Omw0zfs8-OAqxmNrbNOW3MCnOph3UQOZ2zpiOcQ" },
+        { id: 7, name: "Toilet Cleaner – 5L", cat: "Cleaning Chemicals", pack: "5L Jerrycan", price: 58, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrAAxytCa6OcMKz2WNulXpQtg3hAX-PMbAnUHTOnogAGlmAee0VOIuWorBDptod3Sn9auoo-4dim_m_ZCp6SBa3jCuCBSiZsVZNno8AfP4FSaN5Zv0DT5OcxptWYQSkb37lZo6qNhU4Nbf1SYg_o9NnTFBRlWITAD4cH6fNbkBtdYYy6vzTHS-r5XB3PjaThx5Med3LGRA9B8ylXgy4_fO9XJ20gzVPU-8FUnXo2W5x6YVLSxbaNdMry" },
+        { id: 8, name: "Industrial Cleaning Gloves", cat: "Safety & Protection", pack: "Box of 50 Pairs", price: 32, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrCWxIhiF9qbH1U5BPZlQufBp8_AhoH50vpOfM8iUi9FZXH_g0sdpwMf-po8FXiJDE1nU6HkZcIzRrToPRENr38SRymMRs1appnKTsuXVG2tmHTFNbxFe8CbUuX1YgAh_7ilnm4Y-zXXpOCOKwBxKBKR5kSUfvJM0OR5SyGa58Xl7VdGJ9YRVu-L50cAhQcwkm8L-QiM15jJ0qOtxBdCJaINQtpLiNA0YPbs-BsnJOcPJHFvZQ-wkhjetLjkPeG9" },
+        { id: 9, name: "Jumbo Roll Toilet Tissue – Case", cat: "Paper Products", pack: "Case of 12 Rolls", price: 92, stock: "In Stock", img: "https://lh3.googleusercontent.com/aida/ALJJyrCSH_cpzO4IxdBUumCODuIZ8Wx7SyrGJNiOSxjLBqH6kOqe5B1t7vYD_HsC3JxsVXNr3ur5GErt2VZWsZqkWQ23grQOOp42a7N6rr4phuC_m3frcTJJYx_qk-Irt1GgaxFhoPY07sciiz3axw0bHGmZU5PIVxztWlxV3Wli0WI_OAWqNyEifGlgJ2kmEkjxpS4rpn_UQPY4YXt7cCLsN2LIN8ya1XPndqyymXxqef6-GI-9bg" }
+      ];
+
+      var grid = document.getElementById("catalogue-grid");
+      var searchInput = document.getElementById("cat-search");
+      var sortSelect = document.getElementById("cat-sort");
+      var priceMax = document.getElementById("price-max");
+      var priceLabel = document.getElementById("price-max-label");
+      var countEl = document.getElementById("result-count");
+      var isList = false;
+      var cartCount = 3;
+
+      function render() {
+        var q = searchInput.value.toLowerCase();
+        var maxP = Number(priceMax.value);
+        priceLabel.textContent = "Up to AED " + maxP;
+        var checkedCats = Array.from(document.querySelectorAll(".cat-filter:checked")).map(function (c) { return c.value; });
+
+        var filtered = items.filter(function (p) {
+          return checkedCats.indexOf(p.cat) !== -1 && p.price <= maxP && (p.name.toLowerCase().indexOf(q) !== -1 || p.cat.toLowerCase().indexOf(q) !== -1);
+        });
+
+        var sortVal = sortSelect.value;
+        if (sortVal === "price-asc") filtered.sort(function (a, b) { return a.price - b.price; });
+        if (sortVal === "price-desc") filtered.sort(function (a, b) { return b.price - a.price; });
+
+        countEl.textContent = "Showing " + filtered.length + " commercial products";
+        grid.className = isList ? "flex flex-col gap-md" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg items-stretch";
+
+        grid.innerHTML = filtered.map(function (p) {
+          if (isList) {
+            return '<article class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant p-md flex flex-col sm:flex-row items-center gap-md shadow-sm">' +
+              '<a href="../product-detail/ProductDetail.html" class="w-28 h-28 shrink-0 rounded bg-light-surface-container-low overflow-hidden"><img src="' + p.img + '" alt="' + p.name + '" class="w-full h-full object-cover"></a>' +
+              '<div class="flex-1 flex flex-col gap-xs">' +
+                '<span class="font-label text-label-sm text-light-primary uppercase">' + p.cat + '</span>' +
+                '<a href="../product-detail/ProductDetail.html" class="font-title text-title-md text-light-on-surface hover:text-light-primary">' + p.name + '</a>' +
+                '<p class="font-body text-body-sm text-light-on-surface-variant">' + p.pack + ' • ' + p.stock + '</p>' +
+              '</div>' +
+              '<div class="flex flex-col items-end gap-sm shrink-0">' +
+                '<span class="font-title text-title-lg text-light-secondary tabular-nums">AED ' + p.price.toFixed(2) + ' <span class="font-body text-body-sm text-light-on-surface-variant font-normal">Demo</span></span>' +
+                '<button type="button" data-add="' + p.name + '" class="px-md py-2 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary">Add to Cart</button>' +
+              '</div>' +
+            '</article>';
+          }
+          return '<article class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">' +
+            '<a href="../product-detail/ProductDetail.html" class="aspect-square bg-light-surface-container-low overflow-hidden"><img src="' + p.img + '" alt="' + p.name + '" class="w-full h-full object-cover"></a>' +
+            '<div class="p-md flex flex-col flex-1 gap-xs">' +
+              '<span class="font-label text-label-sm text-light-primary uppercase tracking-wider">' + p.cat + '</span>' +
+              '<a href="../product-detail/ProductDetail.html" class="font-title text-title-md text-light-on-surface hover:text-light-primary">' + p.name + '</a>' +
+              '<p class="font-body text-body-sm text-light-on-surface-variant">' + p.pack + ' • <span class="text-light-primary">' + p.stock + '</span></p>' +
+              '<div class="mt-auto pt-sm flex items-baseline justify-between">' +
+                '<span class="font-title text-title-lg text-light-secondary tabular-nums">AED ' + p.price.toFixed(2) + '</span>' +
+                '<span class="font-body text-body-sm text-light-on-surface-variant">Demo price</span>' +
+              '</div>' +
+              '<div class="pt-sm flex gap-sm">' +
+                '<button type="button" data-add="' + p.name + '" class="flex-1 py-2 px-3 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary">Add to Cart</button>' +
+                '<a href="../product-detail/ProductDetail.html" class="py-2 px-3 rounded border border-light-outline-variant font-label text-label-md text-light-on-surface hover:border-light-primary">Details</a>' +
+              '</div>' +
+            '</div>' +
+          '</article>';
+        }).join("");
+      }
+
+      grid.addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-add]");
+        if (btn) {
+          cartCount += 1;
+          document.getElementById("header-cart-count").textContent = String(cartCount);
+          var t = document.getElementById("toast");
+          t.textContent = "Added " + btn.getAttribute("data-add") + " to cart";
+          t.classList.remove("hidden");
+          setTimeout(function () { t.classList.add("hidden"); }, 2200);
+        }
+      });
+
+      document.getElementById("view-grid-btn").addEventListener("click", function () { isList = false; render(); });
+      document.getElementById("view-list-btn").addEventListener("click", function () { isList = true; render(); });
+      document.getElementById("mobile-filter-toggle").addEventListener("click", function () {
+        document.getElementById("filter-sidebar").classList.toggle("hidden");
+      });
+      document.getElementById("reset-filters").addEventListener("click", function () {
+        document.querySelectorAll(".cat-filter").forEach(function (c) { c.checked = true; });
+        priceMax.value = 250;
+        searchInput.value = "";
+        render();
+      });
+      searchInput.addEventListener("input", render);
+      sortSelect.addEventListener("change", render);
+      priceMax.addEventListener("input", render);
+      document.querySelectorAll(".cat-filter").forEach(function (c) { c.addEventListener("change", render); });
+
+      render();
+    })();
+  </script>
+
+
+</body></html>
+
+<!-- HYGIENOVO — Product Detail -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Floor Cleaner – 5L — HYGIENOVO</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-forest': '#123D32',
+        'primary-green': '#1C6B52',
+        'fresh-mint': '#DDF2E8',
+        'off-white': '#F8FAF7',
+        'pure-white': '#FFFFFF',
+        'charcoal': '#202824',
+        'muted-grey': '#77817B',
+        'gold-accent': '#C5A46D',
+        'success': '#1C6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#8F6100',
+        'on-warning': '#FFFFFF',
+        'light-primary': '#1C6B52',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#DDF2E8',
+        'light-on-primary-container': '#123D32',
+        'light-secondary': '#123D32',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EAF3EC',
+        'light-on-secondary-container': '#123D32',
+        'light-tertiary': '#755A2A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEED8',
+        'light-on-tertiary-container': '#271900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAF7',
+        'light-on-background': '#202824',
+        'light-surface': '#F8FAF7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F6F2',
+        'light-surface-container': '#E8EFEA',
+        'light-surface-container-high': '#E0E9E3',
+        'light-surface-container-highest': '#D6E0DA',
+        'light-on-surface': '#202824',
+        'light-on-surface-variant': '#535D57',
+        'light-outline': '#77817B',
+        'light-outline-variant': '#D5DFD8',
+        'light-inverse-surface': '#123D32',
+        'light-inverse-on-surface': '#FFFFFF',
+        'light-inverse-primary': '#8BD5B7',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
+        'section': '80px',
+      },
+      fontFamily: {
+        'display': ['"Manrope"', 'sans-serif'],
+        'headline': ['"Manrope"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '58px', letterSpacing: '-1.0px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-md': ['40px', { lineHeight: '46px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-deep-forest text-light-inverse-on-surface py-2 px-md text-center">
+    <p class="font-body text-body-sm">Dubai &amp; UAE Commercial Supply • All catalog prices shown in AED are demo pricing for preview purposes</p>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl h-20 flex items-center justify-between gap-md">
+      <a href="../homepage/Homepage.html" class="flex items-center gap-2.5 shrink-0">
+        <span class="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[20px]">eco</span>
+        </span>
+        <span class="font-headline text-title-lg tracking-tight text-light-secondary font-bold">HYGIENOVO</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-5">
+        <a href="../homepage/Homepage.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Home</a>
+        <a href="../product-catalogue/ProductCatalogue.html" class="font-label text-label-md text-light-primary font-semibold whitespace-nowrap">Shop</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Washroom Hygiene</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Office Supplies</a>
+        <a href="../homepage/Homepage.html#brand-story" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">About Us</a>
+        <a href="#footer" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="../cart-checkout/CartCheckout.html" aria-label="Shopping cart" class="relative inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+          <span id="header-cart-count" class="absolute -top-0.5 -right-0.5 inline-flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-light-primary text-light-on-primary font-label text-label-sm tabular-nums">3</span>
+        </a>
+        <a href="../b2b-quotation/B2BQuotation.html" class="hidden sm:inline-flex items-center justify-center px-md py-2.5 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary transition-colors whitespace-nowrap">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1280px] w-full mx-auto px-md lg:px-xl py-xl">
+    <nav aria-label="Breadcrumb" class="font-body text-body-sm text-light-on-surface-variant mb-lg">
+      <a href="../homepage/Homepage.html" class="hover:text-light-primary">Home</a> /
+      <a href="../product-catalogue/ProductCatalogue.html" class="hover:text-light-primary">Cleaning Chemicals</a> /
+      <span class="text-light-on-surface">Commercial Floor Cleaner – 5L</span>
+    </nav>
+
+    <!-- Main Product Split -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+      <!-- Left: Gallery + Zoom -->
+      <div class="lg:col-span-6 flex flex-col gap-md">
+        <div class="relative bg-light-surface-container-lowest rounded-lg border border-light-outline-variant overflow-hidden">
+          <img id="main-product-img" src="https://lh3.googleusercontent.com/aida/ALJJyrDm40d0MA-99jINN_cckP9QNr1el18aTck7T4ivhz5H_60umAThqOIEasgf3Memj4nuCB0Zl9FE-7qFNg1PJG8ksj-CuCBs8Fi7FdskAB6GIisdjYcToSyKEn-ifb-uqCGmOENacgdQfSNkCCHLq-I46ubnJmOFr_tvon_Qu73N8XUD_bSxkhOMu5sFdJlppH8dQXbCRn1A9ozzlMF-t-voggMVFVnvtVv92jfdcv926HGQ7KpD3y824GtRz_g" alt="Commercial Floor Cleaner 5L" class="w-full aspect-square object-cover transition-transform duration-surface-enter cursor-zoom-in">
+          <button id="zoom-toggle" type="button" class="absolute bottom-4 right-4 inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-light-surface-container-lowest/95 border border-light-outline-variant font-label text-label-sm text-light-on-surface shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">zoom_in</span>
+            <span>Toggle Zoom</span>
+          </button>
+        </div>
+        <div class="grid grid-cols-3 gap-md">
+          <button type="button" data-thumb="../../images/prod_floor_cleaner.jpg" class="thumb-btn rounded-md border-2 border-light-primary overflow-hidden bg-light-surface-container-lowest">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrDm40d0MA-99jINN_cckP9QNr1el18aTck7T4ivhz5H_60umAThqOIEasgf3Memj4nuCB0Zl9FE-7qFNg1PJG8ksj-CuCBs8Fi7FdskAB6GIisdjYcToSyKEn-ifb-uqCGmOENacgdQfSNkCCHLq-I46ubnJmOFr_tvon_Qu73N8XUD_bSxkhOMu5sFdJlppH8dQXbCRn1A9ozzlMF-t-voggMVFVnvtVv92jfdcv926HGQ7KpD3y824GtRz_g" alt="Front view" class="w-full aspect-square object-cover">
+          </button>
+          <button type="button" data-thumb="../../images/cat_chemicals.jpg" class="thumb-btn rounded-md border border-light-outline-variant overflow-hidden bg-light-surface-container-lowest">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAAxytCa6OcMKz2WNulXpQtg3hAX-PMbAnUHTOnogAGlmAee0VOIuWorBDptod3Sn9auoo-4dim_m_ZCp6SBa3jCuCBSiZsVZNno8AfP4FSaN5Zv0DT5OcxptWYQSkb37lZo6qNhU4Nbf1SYg_o9NnTFBRlWITAD4cH6fNbkBtdYYy6vzTHS-r5XB3PjaThx5Med3LGRA9B8ylXgy4_fO9XJ20gzVPU-8FUnXo2W5x6YVLSxbaNdMry" alt="Commercial range" class="w-full aspect-square object-cover">
+          </button>
+          <button type="button" data-thumb="../../images/hero_commercial_cleaning.jpg" class="thumb-btn rounded-md border border-light-outline-variant overflow-hidden bg-light-surface-container-lowest">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrBza3IJ-6ffiVDnxI5l9DzFywtWI7Pjp90wRySl8_VpDi320prBhWZMsdDMu1QyOpwZIFySKe1P3CwuNzb9fny5PTvvOTaJomVm1ld3i0yo5da_NBSK3AtJZg9e30yzIqH2oA9vtO30nI5VcWYv0TIXjbGJAAeTr_cD4ALAuQLjXgLbMjYaQN-R16VBJXuMETTlrwzF8IT2DGLjtBpJcLxY0rkAYFi71g35npjcfJ5d3uCby_-dWZW_5nXkhbKwtuvFEho" alt="In commercial workspace" class="w-full aspect-square object-cover">
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Product Info & Actions -->
+      <div class="lg:col-span-6 bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg lg:p-xl flex flex-col gap-md shadow-sm">
+        <div class="flex items-center justify-between gap-sm">
+          <span class="font-mono text-mono-sm text-light-on-surface-variant">SKU: HYG-CHM-501</span>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm">In Stock • Dubai Dispatch</span>
+        </div>
+
+        <h1 class="font-headline text-display-md-mobile lg:text-headline-lg text-light-on-surface">Commercial Floor Cleaner – 5L</h1>
+
+        <p class="font-body text-body-md text-light-on-surface-variant max-w-prose">
+          Low-foam, streak-free commercial floor cleaning solution formulated for daily maintenance across tiled, marble, vinyl, and sealed concrete floors in high-traffic business premises.
+        </p>
+
+        <div class="py-md border-y border-light-outline-variant flex items-baseline justify-between">
+          <div>
+            <span id="unit-price" class="font-headline text-headline-lg text-light-secondary tabular-nums">AED 68.00</span>
+            <span class="ml-2 font-body text-body-sm text-light-on-surface-variant">Demo price (excl. VAT)</span>
+          </div>
+          <span class="font-label text-label-sm text-light-primary">Bulk pallet rates available</span>
+        </div>
+
+        <!-- Pack Size Selector -->
+        <div>
+          <span class="block font-label text-label-md text-light-on-surface mb-xs">Pack Size</span>
+          <div class="flex flex-wrap gap-sm">
+            <button type="button" data-pack-price="68.00" class="pack-btn px-md py-2 rounded border-2 border-light-primary bg-light-primary-container text-light-on-primary-container font-label text-label-md">5L Jerrycan</button>
+            <button type="button" data-pack-price="252.00" class="pack-btn px-md py-2 rounded border border-light-outline-variant bg-light-surface text-light-on-surface font-label text-label-md hover:border-light-primary">Case of 4 × 5L (Save 7%)</button>
+          </div>
+        </div>
+
+        <!-- Quantity + Primary Actions -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-sm pt-xs">
+          <div class="inline-flex items-center justify-between border border-light-outline-variant rounded px-2 py-1.5 bg-light-surface w-36">
+            <button id="qty-dec" type="button" aria-label="Decrease quantity" class="w-8 h-8 rounded hover:bg-light-surface-container flex items-center justify-center">-</button>
+            <span id="qty-val" class="font-title text-title-md tabular-nums">1</span>
+            <button id="qty-inc" type="button" aria-label="Increase quantity" class="w-8 h-8 rounded hover:bg-light-surface-container flex items-center justify-center">+</button>
+          </div>
+          <button id="add-to-cart-btn" type="button" class="flex-1 py-3 px-lg rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors">
+            Add to Cart
+          </button>
+          <a href="../cart-checkout/CartCheckout.html" class="py-3 px-lg rounded border border-light-outline-variant text-center font-label text-label-lg text-light-on-surface hover:border-light-primary">
+            Buy Now
+          </a>
+        </div>
+
+        <!-- Dedicated B2B Bulk Quote Option -->
+        <div class="bg-light-surface-container-low rounded-md border border-light-outline-variant p-md flex flex-col sm:flex-row sm:items-center justify-between gap-sm mt-xs">
+          <div>
+            <p class="font-title text-title-sm text-light-on-surface">Ordering 20+ units or recurring supply?</p>
+            <p class="font-body text-body-sm text-light-on-surface-variant">Request a tailored AED quotation for your facility.</p>
+          </div>
+          <a href="../b2b-quotation/B2BQuotation.html" class="px-md py-2 rounded bg-light-secondary text-light-on-secondary font-label text-label-md whitespace-nowrap text-center hover:bg-light-primary">
+            Request Bulk Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs: Specifications, Applications, Usage, Packaging -->
+    <section class="mt-2xl bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg lg:p-xl">
+      <div class="flex flex-wrap gap-md border-b border-light-outline-variant pb-md mb-lg" role="tablist">
+        <button type="button" data-tab="specs" class="tab-btn font-label text-label-lg text-light-primary border-b-2 border-light-primary pb-1">Specifications</button>
+        <button type="button" data-tab="apps" class="tab-btn font-label text-label-lg text-light-on-surface-variant pb-1">Applications</button>
+        <button type="button" data-tab="usage" class="tab-btn font-label text-label-lg text-light-on-surface-variant pb-1">Usage &amp; Safety</button>
+        <button type="button" data-tab="pack" class="tab-btn font-label text-label-lg text-light-on-surface-variant pb-1">Packaging Details</button>
+      </div>
+
+      <div id="tab-specs" class="tab-panel grid grid-cols-1 md:grid-cols-2 gap-md">
+        <div class="flex justify-between py-2 border-b border-light-outline-variant"><span class="font-body text-body-md text-light-on-surface-variant">Product Format</span><span class="font-title text-title-sm">Liquid Concentrate (5L)</span></div>
+        <div class="flex justify-between py-2 border-b border-light-outline-variant"><span class="font-body text-body-md text-light-on-surface-variant">Container Material</span><span class="font-title text-title-sm">Recyclable HDPE Jerrycan</span></div>
+        <div class="flex justify-between py-2 border-b border-light-outline-variant"><span class="font-body text-body-md text-light-on-surface-variant">Surface Compatibility</span><span class="font-title text-title-sm">Tile, Vinyl, Sealed Stone</span></div>
+        <div class="flex justify-between py-2 border-b border-light-outline-variant"><span class="font-body text-body-md text-light-on-surface-variant">Technical Data</span><span class="font-title text-title-sm">Demo listing — confirm spec sheet on order</span></div>
+      </div>
+
+      <div id="tab-apps" class="tab-panel hidden font-body text-body-md text-light-on-surface-variant max-w-prose">
+        Recommended for daily lobby, corridor, washroom, and back-of-house floor care in office buildings, hotels, schools, and commercial facilities across Dubai.
+      </div>
+
+      <div id="tab-usage" class="tab-panel hidden font-body text-body-md text-light-on-surface-variant max-w-prose">
+        Always follow label dilution instructions and wear standard protective gloves during handling. Detailed safety data sheets (SDS) are supplied upon commercial order confirmation rather than fabricated in this preview.
+      </div>
+
+      <div id="tab-pack" class="tab-panel hidden font-body text-body-md text-light-on-surface-variant max-w-prose">
+        Supplied in tamper-evident 5L HDPE jerrycans, individually or in 4 × 5L corrugated commercial cases for palletized UAE delivery.
+      </div>
+    </section>
+
+    <!-- Frequently Bought Together & Related Products -->
+    <section class="mt-2xl">
+      <h2 class="font-headline text-headline-md text-light-on-surface mb-lg">Frequently Bought Together</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+        <a href="../product-detail/ProductDetail.html" class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant p-md flex items-center gap-md hover:border-light-primary">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAcjHT6jlUU-BG6xIRAPxj-WoaQu31zYQE3Tn21j0JYctSU98akziF4iF5msbVkJoHfBzxoDAyMLHSb2PmJfRyqP7WvGKODuIPkArbdmTiJ9dELTubOLd-M84sqFw1-uA5PcxPwP-qfjUx4OZ5VFtQSY8LJgAu5SLQ7PywBcY3a_rA7-SF7ChU5XRUy61fGzfqjU6B78NcxJx3Omw0zfs8-OAqxmNrbNOW3MCnOph3UQOZ2zpiOcQ" alt="Professional Mop and Bucket Set" class="w-20 h-20 rounded object-cover bg-light-surface-container-low">
+          <div>
+            <p class="font-title text-title-sm text-light-on-surface">Professional Mop &amp; Bucket Set</p>
+            <p class="font-body text-body-sm text-light-secondary tabular-nums">AED 195.00 (Demo)</p>
+          </div>
+        </a>
+        <a href="../product-detail/ProductDetail.html" class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant p-md flex items-center gap-md hover:border-light-primary">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCqe9qNanm3DHw3822mKYuYfnXXpwbiQbxphn_mt3eh_J4AyLvlg2atVBfmsmCpuSwFG1HFNMcebjBpD-S5pImm0i9nFFA0baPRnroHLPmHmKwicadEU2wvEh7tsVXpvFF9jFs4AeWDUmhomzaG7rAkuKSyvStbiye56RVRAcyvCi6amewab-Bz3tE2bVYTPI7JaV_stuyFs1CCSEFCrLCRn5Zx9wp7-z2Fg_zD3la4HFyhhKaDvm6nLnC7ylJMmgo" alt="Microfiber Cleaning Cloth Pack of 10" class="w-20 h-20 rounded object-cover bg-light-surface-container-low">
+          <div>
+            <p class="font-title text-title-sm text-light-on-surface">Microfiber Cleaning Cloth – Pack of 10</p>
+            <p class="font-body text-body-sm text-light-secondary tabular-nums">AED 45.00 (Demo)</p>
+          </div>
+        </a>
+        <a href="../product-detail/ProductDetail.html" class="bg-light-surface-container-lowest rounded-md border border-light-outline-variant p-md flex items-center gap-md hover:border-light-primary">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCWxIhiF9qbH1U5BPZlQufBp8_AhoH50vpOfM8iUi9FZXH_g0sdpwMf-po8FXiJDE1nU6HkZcIzRrToPRENr38SRymMRs1appnKTsuXVG2tmHTFNbxFe8CbUuX1YgAh_7ilnm4Y-zXXpOCOKwBxKBKR5kSUfvJM0OR5SyGa58Xl7VdGJ9YRVu-L50cAhQcwkm8L-QiM15jJ0qOtxBdCJaINQtpLiNA0YPbs-BsnJOcPJHFvZQ-wkhjetLjkPeG9" alt="Industrial Cleaning Gloves" class="w-20 h-20 rounded object-cover bg-light-surface-container-low">
+          <div>
+            <p class="font-title text-title-sm text-light-on-surface">Industrial Cleaning Gloves</p>
+            <p class="font-body text-body-sm text-light-secondary tabular-nums">AED 32.00 (Demo)</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10 mt-2xl py-xl px-md lg:px-xl text-center">
+    <p class="font-body text-body-sm text-fresh-mint">© 2026 HYGIENOVO Commercial Supply • Dubai, United Arab Emirates</p>
+  </footer>
+
+  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 bg-deep-forest text-pure-white px-lg py-3 rounded-md shadow-lg font-label text-label-md"></div>
+
+  <script>
+    (function () {
+      var qty = 1;
+      var cartCount = 3;
+      var mainImg = document.getElementById("main-product-img");
+      var zoomed = false;
+
+      document.getElementById("zoom-toggle").addEventListener("click", function () {
+        zoomed = !zoomed;
+        mainImg.style.transform = zoomed ? "scale(1.35)" : "scale(1)";
+      });
+
+      document.querySelectorAll(".thumb-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          mainImg.src = btn.getAttribute("data-thumb");
+        });
+      });
+
+      document.querySelectorAll(".pack-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll(".pack-btn").forEach(function (b) {
+            b.className = "pack-btn px-md py-2 rounded border border-light-outline-variant bg-light-surface text-light-on-surface font-label text-label-md hover:border-light-primary";
+          });
+          btn.className = "pack-btn px-md py-2 rounded border-2 border-light-primary bg-light-primary-container text-light-on-primary-container font-label text-label-md";
+          document.getElementById("unit-price").textContent = "AED " + btn.getAttribute("data-pack-price");
+        });
+      });
+
+      document.getElementById("qty-dec").addEventListener("click", function () {
+        if (qty > 1) { qty -= 1; document.getElementById("qty-val").textContent = String(qty); }
+      });
+      document.getElementById("qty-inc").addEventListener("click", function () {
+        qty += 1; document.getElementById("qty-val").textContent = String(qty);
+      });
+
+      document.getElementById("add-to-cart-btn").addEventListener("click", function () {
+        cartCount += qty;
+        document.getElementById("header-cart-count").textContent = String(cartCount);
+        var t = document.getElementById("toast");
+        t.textContent = "Added " + qty + " × Commercial Floor Cleaner – 5L to cart";
+        t.classList.remove("hidden");
+        setTimeout(function () { t.classList.add("hidden"); }, 2200);
+      });
+
+      document.querySelectorAll(".tab-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll(".tab-btn").forEach(function (b) {
+            b.className = "tab-btn font-label text-label-lg text-light-on-surface-variant pb-1";
+          });
+          btn.className = "tab-btn font-label text-label-lg text-light-primary border-b-2 border-light-primary pb-1";
+          document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.add("hidden"); });
+          document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.remove("hidden");
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>
+
+<!-- HYGIENOVO — B2B Quotation -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a B2B Quote — HYGIENOVO</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-forest': '#123D32',
+        'primary-green': '#1C6B52',
+        'fresh-mint': '#DDF2E8',
+        'off-white': '#F8FAF7',
+        'pure-white': '#FFFFFF',
+        'charcoal': '#202824',
+        'muted-grey': '#77817B',
+        'gold-accent': '#C5A46D',
+        'success': '#1C6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#8F6100',
+        'on-warning': '#FFFFFF',
+        'light-primary': '#1C6B52',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#DDF2E8',
+        'light-on-primary-container': '#123D32',
+        'light-secondary': '#123D32',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EAF3EC',
+        'light-on-secondary-container': '#123D32',
+        'light-tertiary': '#755A2A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEED8',
+        'light-on-tertiary-container': '#271900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAF7',
+        'light-on-background': '#202824',
+        'light-surface': '#F8FAF7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F6F2',
+        'light-surface-container': '#E8EFEA',
+        'light-surface-container-high': '#E0E9E3',
+        'light-surface-container-highest': '#D6E0DA',
+        'light-on-surface': '#202824',
+        'light-on-surface-variant': '#535D57',
+        'light-outline': '#77817B',
+        'light-outline-variant': '#D5DFD8',
+        'light-inverse-surface': '#123D32',
+        'light-inverse-on-surface': '#FFFFFF',
+        'light-inverse-primary': '#8BD5B7',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
+        'section': '80px',
+      },
+      fontFamily: {
+        'display': ['"Manrope"', 'sans-serif'],
+        'headline': ['"Manrope"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '58px', letterSpacing: '-1.0px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-md': ['40px', { lineHeight: '46px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-deep-forest text-light-inverse-on-surface py-2 px-md text-center">
+    <p class="font-body text-body-sm">Dubai &amp; UAE Commercial Supply • Custom B2B Quotations in AED</p>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl h-20 flex items-center justify-between gap-md">
+      <a href="../homepage/Homepage.html" class="flex items-center gap-2.5 shrink-0">
+        <span class="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[20px]">eco</span>
+        </span>
+        <span class="font-headline text-title-lg tracking-tight text-light-secondary font-bold">HYGIENOVO</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-5">
+        <a href="../homepage/Homepage.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Home</a>
+        <a href="../product-catalogue/ProductCatalogue.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Shop</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Washroom Hygiene</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Office Supplies</a>
+        <a href="../homepage/Homepage.html#brand-story" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">About Us</a>
+        <a href="#footer" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="../cart-checkout/CartCheckout.html" aria-label="Shopping cart" class="relative inline-flex items-center justify-center w-9 h-9 rounded-full text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+          <span class="absolute -top-0.5 -right-0.5 inline-flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-light-primary text-light-on-primary font-label text-label-sm tabular-nums">3</span>
+        </a>
+        <a href="../b2b-quotation/B2BQuotation.html" class="hidden sm:inline-flex items-center justify-center px-md py-2.5 rounded bg-light-secondary text-light-on-secondary font-label text-label-md whitespace-nowrap">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1280px] w-full mx-auto px-md lg:px-xl py-2xl">
+    <div class="max-w-2xl mb-xl">
+      <span class="inline-flex items-center px-3 py-1 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-sm mb-sm">B2B PROCUREMENT DESK • DUBAI, UAE</span>
+      <h1 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface text-balance">Get a Custom Quote for Your Business.</h1>
+      <p class="font-body text-body-lg text-light-on-surface-variant mt-xs">
+        Share your facility requirements below to receive a formal AED quotation, bulk volume pricing, and scheduled delivery options.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+      <!-- Quotation Form -->
+      <section class="lg:col-span-8 bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg lg:p-xl shadow-sm">
+        <form id="quote-form" class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Company Name *</span>
+            <input type="text" required placeholder="e.g., Horizon Facility Management LLC" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Contact Person *</span>
+            <input type="text" required placeholder="Full name" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Business Email *</span>
+            <input type="email" required placeholder="procurement@company.ae" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Phone Number *</span>
+            <input type="tel" required placeholder="+971 50 000 0000" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Business Type *</span>
+            <select required class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+              <option value>Select business sector</option>
+              <option>Office Building / Corporate HQ</option>
+              <option>Facility Management Company</option>
+              <option>Professional Cleaning Contractor</option>
+              <option>Hotel &amp; Hospitality</option>
+              <option>School / Educational Institution</option>
+              <option>Warehouse / Commercial Facility</option>
+            </select>
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Delivery Location *</span>
+            <input type="text" required placeholder="e.g., Business Bay, Dubai" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="md:col-span-2 flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Products Required *</span>
+            <input type="text" required placeholder="e.g., Commercial Floor Cleaner 5L, Liquid Hand Wash 5L, Microfiber Cloths" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Estimated Quantity *</span>
+            <input type="text" required placeholder="e.g., 50 × 5L units / monthly" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none">
+          </label>
+
+          <label class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Supply Frequency</span>
+            <select class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+              <option>One-Time Bulk Order</option>
+              <option>Monthly Recurring Supply</option>
+              <option>Quarterly Contract</option>
+            </select>
+          </label>
+
+          <label class="md:col-span-2 flex flex-col gap-xs">
+            <span class="font-label text-label-md text-light-on-surface">Additional Requirements</span>
+            <textarea rows="3" placeholder="Delivery dock hours, multi-building split, or UAE TRN details..." class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md text-light-on-surface focus:border-light-primary focus:ring-2 focus:ring-light-primary/20 focus:outline-none"></textarea>
+          </label>
+
+          <div class="md:col-span-2 flex flex-col sm:flex-row sm:items-center justify-between gap-md pt-sm">
+            <p class="font-body text-body-sm text-light-on-surface-variant">Demo form — submissions display an instant confirmation preview.</p>
+            <button type="submit" class="px-xl py-3.5 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors">
+              Submit Quote Request
+            </button>
+          </div>
+        </form>
+
+        <div id="quote-confirmation" class="hidden mt-lg p-lg rounded-md bg-light-primary-container text-light-on-primary-container flex items-start gap-md">
+          <span class="material-symbols-outlined text-[24px]">check_circle</span>
+          <div>
+            <p class="font-title text-title-md">Quote Request Received (Demo Preview)</p>
+            <p class="font-body text-body-md mt-xs">Reference #HYG-Q-2048. Our Dubai B2B desk would prepare your custom AED quotation and send it to your business email.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Sidebar: B2B Process & Direct WhatsApp -->
+      <aside class="lg:col-span-4 flex flex-col gap-lg">
+        <div class="bg-deep-forest text-pure-white rounded-lg p-xl flex flex-col gap-md">
+          <h2 class="font-headline text-headline-sm">How Bulk Quoting Works</h2>
+          <ol class="flex flex-col gap-md font-body text-body-md text-fresh-mint">
+            <li class="flex gap-3"><span class="font-title text-gold-accent">01</span><span>Submit your product list, quantities, and Dubai/UAE delivery site.</span></li>
+            <li class="flex gap-3"><span class="font-title text-gold-accent">02</span><span>Receive an itemized AED quotation with volume pricing tiers.</span></li>
+            <li class="flex gap-3"><span class="font-title text-gold-accent">03</span><span>Approve your quote to schedule consolidated or recurring delivery.</span></li>
+          </ol>
+        </div>
+
+        <div class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg flex flex-col gap-sm">
+          <h3 class="font-title text-title-md text-light-on-surface">Need Immediate Assistance?</h3>
+          <p class="font-body text-body-sm text-light-on-surface-variant">Connect with our Dubai commercial supply team on WhatsApp for urgent facility orders.</p>
+          <a href="https://wa.me/97140000000" class="mt-xs inline-flex items-center justify-center gap-2 py-2.5 px-md rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>Message on WhatsApp</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="footer" class="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10 mt-2xl py-xl px-md lg:px-xl text-center">
+    <p class="font-body text-body-sm text-fresh-mint">© 2026 HYGIENOVO Commercial Supply • Dubai, United Arab Emirates</p>
+  </footer>
+
+  <script>
+    document.getElementById("quote-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("quote-confirmation").classList.remove("hidden");
+    });
+  </script>
+
+
+</body></html>
+
+<!-- HYGIENOVO — Cart & Checkout -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart &amp; Checkout — HYGIENOVO</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-forest': '#123D32',
+        'primary-green': '#1C6B52',
+        'fresh-mint': '#DDF2E8',
+        'off-white': '#F8FAF7',
+        'pure-white': '#FFFFFF',
+        'charcoal': '#202824',
+        'muted-grey': '#77817B',
+        'gold-accent': '#C5A46D',
+        'success': '#1C6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#8F6100',
+        'on-warning': '#FFFFFF',
+        'light-primary': '#1C6B52',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#DDF2E8',
+        'light-on-primary-container': '#123D32',
+        'light-secondary': '#123D32',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EAF3EC',
+        'light-on-secondary-container': '#123D32',
+        'light-tertiary': '#755A2A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFEED8',
+        'light-on-tertiary-container': '#271900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAF7',
+        'light-on-background': '#202824',
+        'light-surface': '#F8FAF7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F6F2',
+        'light-surface-container': '#E8EFEA',
+        'light-surface-container-high': '#E0E9E3',
+        'light-surface-container-highest': '#D6E0DA',
+        'light-on-surface': '#202824',
+        'light-on-surface-variant': '#535D57',
+        'light-outline': '#77817B',
+        'light-outline-variant': '#D5DFD8',
+        'light-inverse-surface': '#123D32',
+        'light-inverse-on-surface': '#FFFFFF',
+        'light-inverse-primary': '#8BD5B7',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
+        'section': '80px',
+      },
+      fontFamily: {
+        'display': ['"Manrope"', 'sans-serif'],
+        'headline': ['"Manrope"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '58px', letterSpacing: '-1.0px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-md': ['40px', { lineHeight: '46px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.4px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-deep-forest text-light-inverse-on-surface py-2 px-md text-center">
+    <p class="font-body text-body-sm">Dubai &amp; UAE Commercial Supply • All prices in AED (Demo Preview)</p>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant shadow-sm">
+    <div class="max-w-[1280px] mx-auto px-md lg:px-xl h-20 flex items-center justify-between gap-md">
+      <a href="../homepage/Homepage.html" class="flex items-center gap-2.5 shrink-0">
+        <span class="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[20px]">eco</span>
+        </span>
+        <span class="font-headline text-title-lg tracking-tight text-light-secondary font-bold">HYGIENOVO</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-5">
+        <a href="../homepage/Homepage.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Home</a>
+        <a href="../product-catalogue/ProductCatalogue.html" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Shop</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=chemicals" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Chemicals</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=equipment" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Cleaning Equipment</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=washroom" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Washroom Hygiene</a>
+        <a href="../product-catalogue/ProductCatalogue.html?cat=paper" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Office Supplies</a>
+        <a href="../homepage/Homepage.html#brand-story" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">About Us</a>
+        <a href="#footer" class="font-label text-label-md text-light-on-surface hover:text-light-primary whitespace-nowrap">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="../b2b-quotation/B2BQuotation.html" class="inline-flex items-center justify-center px-md py-2.5 rounded bg-light-primary text-light-on-primary font-label text-label-md hover:bg-light-secondary transition-colors whitespace-nowrap">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1280px] w-full mx-auto px-md lg:px-xl py-2xl">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md mb-xl">
+      <div>
+        <h1 class="font-headline text-display-md-mobile lg:text-display-md text-light-on-surface">Shopping Cart &amp; Checkout</h1>
+        <p class="font-body text-body-md text-light-on-surface-variant mt-xs">Review your commercial order and complete UAE delivery details.</p>
+      </div>
+      <a href="../product-catalogue/ProductCatalogue.html" class="inline-flex items-center gap-1 font-label text-label-lg text-light-primary hover:underline">
+        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        <span>Continue Shopping</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+      <!-- Left: Cart Items + Checkout Form -->
+      <div class="lg:col-span-8 flex flex-col gap-xl">
+        <!-- Cart Items Card -->
+        <section class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg shadow-sm">
+          <h2 class="font-headline text-headline-sm text-light-on-surface mb-md">Cart Items (<span id="cart-item-count">3</span>)</h2>
+          <div id="cart-items-list" class="divide-y divide-light-outline-variant"></div>
+        </section>
+
+        <!-- Checkout Details Card -->
+        <section class="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg lg:p-xl shadow-sm">
+          <h2 class="font-headline text-headline-sm text-light-on-surface mb-lg">Customer &amp; Delivery Information</h2>
+          <form id="checkout-form" class="grid grid-cols-1 md:grid-cols-2 gap-md">
+            <label class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">Contact Name *</span>
+              <input type="text" required placeholder="Full name" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+            </label>
+            <label class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">Business Email *</span>
+              <input type="email" required placeholder="orders@company.ae" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+            </label>
+            <label class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">Company Name (Optional for B2C)</span>
+              <input type="text" placeholder="Company LLC" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+            </label>
+            <label class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">UAE TRN (Optional)</span>
+              <input type="text" placeholder="100XXXXXXXXXXXX" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-mono text-mono-sm focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+            </label>
+            <label class="md:col-span-2 flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">Delivery Address (Dubai / UAE) *</span>
+              <input type="text" required placeholder="Building / Warehouse, Street, Area (e.g., Al Quoz Industrial 3, Dubai)" class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+            </label>
+            <label class="md:col-span-2 flex items-center gap-2 font-body text-body-sm text-light-on-surface py-1">
+              <input type="checkbox" checked class="rounded text-light-primary focus:ring-light-primary">
+              <span>Billing address is the same as delivery address</span>
+            </label>
+            <label class="md:col-span-2 flex flex-col gap-xs">
+              <span class="font-label text-label-md text-light-on-surface">Delivery Preferences</span>
+              <select class="w-full rounded border border-light-outline-variant bg-light-surface px-md py-2.5 font-body text-body-md focus:border-light-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+                <option>Standard Dubai Business Hours (9:00 AM – 5:00 PM)</option>
+                <option>Morning Loading Dock Window (8:00 AM – 12:00 PM)</option>
+              </select>
+            </label>
+
+            <!-- Payment Method Placeholders -->
+            <div class="md:col-span-2 pt-md border-t border-light-outline-variant">
+              <h3 class="font-title text-title-md text-light-on-surface mb-xs">Payment Method</h3>
+              <p class="font-body text-body-sm text-light-on-surface-variant mb-md">UI placeholders for UAE payment integration; COD and bank transfer are configurable options.</p>
+              <div class="flex flex-col gap-sm">
+                <label class="flex items-center justify-between p-md rounded border border-light-primary bg-light-primary-container/40 cursor-pointer">
+                  <span class="flex items-center gap-3">
+                    <input type="radio" name="payment" checked class="text-light-primary focus:ring-light-primary">
+                    <span class="font-title text-title-sm text-light-on-surface">UAE Card / Apple Pay Gateway (Integration Placeholder)</span>
+                  </span>
+                  <span class="font-label text-label-sm text-light-primary">AED</span>
+                </label>
+                <label class="flex items-center justify-between p-md rounded border border-light-outline-variant cursor-pointer">
+                  <span class="flex items-center gap-3">
+                    <input type="radio" name="payment" class="text-light-primary focus:ring-light-primary">
+                    <span class="font-title text-title-sm text-light-on-surface">Bank Transfer (Configurable B2B Option)</span>
+                  </span>
+                  <span class="font-label text-label-sm text-light-on-surface-variant">Configurable</span>
+                </label>
+                <label class="flex items-center justify-between p-md rounded border border-light-outline-variant cursor-pointer">
+                  <span class="flex items-center gap-3">
+                    <input type="radio" name="payment" class="text-light-primary focus:ring-light-primary">
+                    <span class="font-title text-title-sm text-light-on-surface">Cash on Delivery (Configurable Option)</span>
+                  </span>
+                  <span class="font-label text-label-sm text-light-on-surface-variant">Configurable</span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Right: Order Summary -->
+      <aside class="lg:col-span-4 bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-lg lg:p-xl shadow-sm sticky top-28 flex flex-col gap-md">
+        <h2 class="font-headline text-headline-sm text-light-on-surface">Order Summary</h2>
+        <div class="flex flex-col gap-sm font-body text-body-md border-b border-light-outline-variant pb-md">
+          <div class="flex justify-between">
+            <span class="text-light-on-surface-variant">Subtotal (Demo)</span>
+            <span id="summary-subtotal" class="font-title text-title-sm tabular-nums">AED 308.00</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-light-on-surface-variant">Delivery Estimate (Dubai)</span>
+            <span class="font-title text-title-sm tabular-nums">AED 25.00</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-light-on-surface-variant">Estimated VAT (5%)</span>
+            <span id="summary-vat" class="font-title text-title-sm tabular-nums">AED 16.65</span>
+          </div>
+        </div>
+        <div class="flex justify-between items-baseline">
+          <span class="font-title text-title-md text-light-on-surface">Total (AED)</span>
+          <span id="summary-total" class="font-headline text-headline-md text-light-secondary tabular-nums">AED 349.65</span>
+        </div>
+
+        <button id="place-order-btn" type="submit" form="checkout-form" class="w-full py-3.5 rounded bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-secondary transition-colors">
+          Place Order
+        </button>
+
+        <div id="order-success" class="hidden p-md rounded bg-light-primary-container text-light-on-primary-container font-body text-body-sm">
+          Demo order preview submitted. No payment was processed.
+        </div>
+
+        <p class="font-body text-body-sm text-light-on-surface-variant text-center">
+          Buying in bulk? <a href="../b2b-quotation/B2BQuotation.html" class="text-light-primary font-medium hover:underline">Request a B2B Quote</a>
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="footer" class="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10 mt-2xl py-xl px-md lg:px-xl text-center">
+    <p class="font-body text-body-sm text-fresh-mint">© 2026 HYGIENOVO Commercial Supply • Dubai, United Arab Emirates</p>
+  </footer>
+
+  <script data-stitch-original-script="51a3bb7af3fd3880===../../images/prod_floor_cleaner.jpg|||ea81fe4d23e3f1f7===../../images/prod_mop_set.jpg|||20042aaa81aab465===../../images/prod_microfiber_cloths.jpg">
+    (function () {
+      var cart = [
+        { id: 1, name: "Commercial Floor Cleaner – 5L", pack: "5L Jerrycan", price: 68, qty: 1, img: "https://lh3.googleusercontent.com/aida/ALJJyrBPnQLR6-ubm5Wk_uCnniZO2MPN-grUkAArrZZT1MM_HvGswN6O8K9YE_cfdYHR5tBRpjt9yFVCrLXYQvqpscTu2Q_DXQhoP3ialtQ_qEmNbXmyuwqJsP0T6TOiZ6vDN1_Pe4IgP8X-aqOxwrhzkAVj0oLHdEy1dK-qzuBBpzbetquYap6Vp6Pcw2LM_nCStL8SB6lhNKXVdXAWcbAZWeyTIdUdnfioPygcux9rOoEll1RsTcM1PyDQv_KjMZY" },
+        { id: 2, name: "Professional Mop & Bucket Set", pack: "Complete Unit", price: 195, qty: 1, img: "https://lh3.googleusercontent.com/aida/ALJJyrAcjHT6jlUU-BG6xIRAPxj-WoaQu31zYQE3Tn21j0JYctSU98akziF4iF5msbVkJoHfBzxoDAyMLHSb2PmJfRyqP7WvGKODuIPkArbdmTiJ9dELTubOLd-M84sqFw1-uA5PcxPwP-qfjUx4OZ5VFtQSY8LJgAu5SLQ7PywBcY3a_rA7-SF7ChU5XRUy61fGzfqjU6B78NcxJx3Omw0zfs8-OAqxmNrbNOW3MCnOph3UQOZ2zpiOcQ" },
+        { id: 3, name: "Microfiber Cleaning Cloth – Pack of 10", pack: "Pack of 10", price: 45, qty: 1, img: "https://lh3.googleusercontent.com/aida/ALJJyrCqe9qNanm3DHw3822mKYuYfnXXpwbiQbxphn_mt3eh_J4AyLvlg2atVBfmsmCpuSwFG1HFNMcebjBpD-S5pImm0i9nFFA0baPRnroHLPmHmKwicadEU2wvEh7tsVXpvFF9jFs4AeWDUmhomzaG7rAkuKSyvStbiye56RVRAcyvCi6amewab-Bz3tE2bVYTPI7JaV_stuyFs1CCSEFCrLCRn5Zx9wp7-z2Fg_zD3la4HFyhhKaDvm6nLnC7ylJMmgo" }
+      ];
+
+      function renderCart() {
+        var list = document.getElementById("cart-items-list");
+        var subtotal = 0;
+        var count = 0;
+
+        list.innerHTML = cart.map(function (item, idx) {
+          var line = item.price * item.qty;
+          subtotal += line;
+          count += item.qty;
+          return '<div class="py-md flex flex-col sm:flex-row sm:items-center gap-md">' +
+            '<img src="' + item.img + '" alt="' + item.name + '" class="w-20 h-20 rounded object-cover bg-light-surface-container-low shrink-0">' +
+            '<div class="flex-1">' +
+              '<p class="font-title text-title-md text-light-on-surface">' + item.name + '</p>' +
+              '<p class="font-body text-body-sm text-light-on-surface-variant">' + item.pack + ' • Unit: AED ' + item.price.toFixed(2) + ' (Demo)</p>' +
+            '</div>' +
+            '<div class="flex items-center gap-md">' +
+              '<div class="inline-flex items-center border border-light-outline-variant rounded px-1">' +
+                '<button type="button" data-dec="' + idx + '" class="w-7 h-8">-</button>' +
+                '<span class="w-8 text-center font-title text-title-sm tabular-nums">' + item.qty + '</span>' +
+                '<button type="button" data-inc="' + idx + '" class="w-7 h-8">+</button>' +
+              '</div>' +
+              '<span class="w-24 text-right font-title text-title-md text-light-secondary tabular-nums">AED ' + line.toFixed(2) + '</span>' +
+              '<button type="button" data-del="' + idx + '" aria-label="Remove item" class="text-light-on-surface-variant hover:text-light-error"><span class="material-symbols-outlined text-[18px]">delete</span></button>' +
+            '</div>' +
+          '</div>';
+        }).join("") || '<p class="py-lg font-body text-body-md text-light-on-surface-variant">Your cart is empty.</p>';
+
+        var shipping = cart.length ? 25 : 0;
+        var vat = (subtotal + shipping) * 0.05;
+        var total = subtotal + shipping + vat;
+
+        document.getElementById("cart-item-count").textContent = String(count);
+        document.getElementById("summary-subtotal").textContent = "AED " + subtotal.toFixed(2);
+        document.getElementById("summary-vat").textContent = "AED " + vat.toFixed(2);
+        document.getElementById("summary-total").textContent = "AED " + total.toFixed(2);
+      }
+
+      document.getElementById("cart-items-list").addEventListener("click", function (e) {
+        var dec = e.target.closest("[data-dec]");
+        var inc = e.target.closest("[data-inc]");
+        var del = e.target.closest("[data-del]");
+        if (dec) {
+          var i = Number(dec.getAttribute("data-dec"));
+          if (cart[i].qty > 1) cart[i].qty -= 1;
+          renderCart();
+        } else if (inc) {
+          var j = Number(inc.getAttribute("data-inc"));
+          cart[j].qty += 1;
+          renderCart();
+        } else if (del) {
+          var k = Number(del.getAttribute("data-del"));
+          cart.splice(k, 1);
+          renderCart();
+        }
+      });
+
+      document.getElementById("checkout-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("order-success").classList.remove("hidden");
+      });
+
+      renderCart();
+    })();
+  </script>
+
+
+</body></html>

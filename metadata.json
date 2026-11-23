@@ -1,0 +1,6 @@
+{
+  "name": "HYGIENOVO",
+  "description": "UAE-based commercial cleaning supplies, washroom hygiene, and equipment e-commerce platform serving offices, facility managers, and residential buyers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

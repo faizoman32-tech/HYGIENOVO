@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-forest: #123D32;
+  --color-primary-green: #1C6B52;
+  --color-fresh-mint: #DDF2E8;
+  --color-off-white: #F8FAF7;
+  --color-pure-white: #FFFFFF;
+  --color-charcoal: #202824;
+  --color-muted-grey: #77817B;
+  --color-gold-accent: #C5A46D;
+  --color-success: #1C6B52;
+  --color-on-success: #FFFFFF;
+  --color-warning: #8F6100;
+  --color-on-warning: #FFFFFF;
+
+  --color-light-primary: #1C6B52;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #DDF2E8;
+  --color-light-on-primary-container: #123D32;
+  --color-light-secondary: #123D32;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #EAF3EC;
+  --color-light-on-secondary-container: #123D32;
+  --color-light-tertiary: #755A2A;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #FFEED8;
+  --color-light-on-tertiary-container: #271900;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #93000A;
+  --color-light-background: #F8FAF7;
+  --color-light-on-background: #202824;
+  --color-light-surface: #F8FAF7;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F1F6F2;
+  --color-light-surface-container: #E8EFEA;
+  --color-light-surface-container-high: #E0E9E3;
+  --color-light-surface-container-highest: #D6E0DA;
+  --color-light-on-surface: #202824;
+  --color-light-on-surface-variant: #535D57;
+  --color-light-outline: #77817B;
+  --color-light-outline-variant: #D5DFD8;
+  --color-light-inverse-surface: #123D32;
+  --color-light-inverse-on-surface: #FFFFFF;
+  --color-light-inverse-primary: #8BD5B7;
+
+  --font-display: "Manrope", sans-serif;
+  --font-headline: "Manrope", sans-serif;
+  --font-title: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-section: 80px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-light-background);
+    color: var(--color-light-on-background);
+    font-family: var(--font-body);
+  }
+}
+
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp,
+.material-icons {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+
+.text-display-lg {
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.text-display-lg-mobile {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+.text-display-md {
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -0.75px;
+  font-weight: 700;
+}
+.text-display-md-mobile {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+.text-headline-md {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  font-weight: 600;
+}
+.text-headline-sm {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.15px;
+  font-weight: 600;
+}
+.text-title-lg {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+}
+.text-title-md {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.text-title-sm {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.text-body-lg {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.text-body-sm {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+.text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+}
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+.text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.text-mono-sm {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
