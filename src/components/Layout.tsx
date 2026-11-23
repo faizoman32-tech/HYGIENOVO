@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useStore } from '../context/StoreContext';
 import { buildWhatsAppLink } from '../lib/uae';
+import { BrandLogo } from './BrandLogo';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const { cart, wishlist, customer, storeConfig, toastMessage } = useStore();
@@ -46,20 +47,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
             >
               <span className="material-symbols-outlined">menu</span>
             </button>
-            <Link to="/" className="flex items-center gap-2.5 shrink-0">
-              <span className="w-9 h-9 rounded bg-light-secondary text-light-on-secondary flex items-center justify-center">
-                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                  eco
-                </span>
-              </span>
-              <span className="font-headline text-title-lg tracking-tight text-light-secondary font-bold whitespace-nowrap">
-                HYGIENOVO
-              </span>
+            <Link to="/" aria-label="HYGIENOVO Home" className="flex items-center shrink-0">
+              <BrandLogo variant="horizontal" surface="light" size="md" />
             </Link>
           </div>
 
           {/* Center: Primary Navigation + Mega Menu */}
-          <nav aria-label="Primary" className="hidden lg:flex items-center gap-5">
+          <nav aria-label="Primary" className="hidden lg:flex items-center gap-3.5 xl:gap-5">
             <NavLink
               to="/"
               end
@@ -313,10 +307,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
             className="w-80 max-w-full min-h-screen bg-light-surface-container-lowest p-lg flex flex-col gap-lg shadow-xl overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between">
-              <span className="font-headline text-title-lg text-light-secondary font-bold">
-                HYGIENOVO
-              </span>
+            <div className="flex items-center justify-between gap-sm">
+              <Link to="/" onClick={() => setMobileMenuOpen(false)} aria-label="HYGIENOVO Home">
+                <BrandLogo variant="horizontal" surface="light" size="sm" />
+              </Link>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -378,14 +372,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <footer id="footer" className="bg-deep-forest text-light-inverse-on-surface border-t border-pure-white/10">
         <div className="max-w-[1280px] mx-auto px-md lg:px-xl py-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
           <div className="flex flex-col gap-md">
-            <div className="flex items-center gap-2.5">
-              <span className="w-8 h-8 rounded bg-light-primary text-pure-white flex items-center justify-center">
-                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
-                  eco
-                </span>
-              </span>
-              <span className="font-headline text-title-lg text-pure-white font-bold">HYGIENOVO</span>
-            </div>
+            <Link to="/" aria-label="HYGIENOVO Home" className="w-fit">
+              <BrandLogo variant="horizontal" surface="dark" size="sm" />
+            </Link>
             <p className="font-body text-body-sm text-fresh-mint">
               A Cleaner Standard for Every Space. UAE-based online supplier of commercial cleaning chemicals, washroom hygiene, and janitorial equipment.
             </p>

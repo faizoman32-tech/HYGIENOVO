@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { BrandLogo } from '../components/BrandLogo';
 import { SafeImage } from '../components/SafeImage';
 import { useStore } from '../context/StoreContext';
 import { apiFetch } from '../lib/api';
@@ -387,20 +388,23 @@ export function AdminDashboardPage() {
     return (
       <div className="max-w-md w-full mx-auto px-md py-2xl">
         <div className="bg-light-surface-container-lowest rounded-lg border border-light-outline-variant p-xl shadow-sm flex flex-col gap-lg">
-          <div>
-            <span className="font-label text-label-sm text-light-primary uppercase tracking-wider">
-              Restricted Administration
-            </span>
-            <h1 className="font-headline text-headline-lg text-light-on-surface mt-xs">
-              {needsBootstrap ? 'Create Store Admin Password' : 'Admin Dashboard Sign In'}
-            </h1>
-            <p className="font-body text-body-sm text-light-on-surface-variant mt-xs">
-              {needsBootstrap
-                ? 'First-time setup: set an administrator password (min. 8 characters) to protect inventory, orders, and store controls.'
-                : envConfigured
-                  ? 'Sign in with your store administrator password.'
-                  : 'Enter your administrator password to manage inventory, orders, and UAE store settings.'}
-            </p>
+          <div className="flex items-start justify-between gap-md">
+            <div>
+              <span className="font-label text-label-sm text-light-primary uppercase tracking-wider">
+                Restricted Administration
+              </span>
+              <h1 className="font-headline text-headline-lg text-light-on-surface mt-xs">
+                {needsBootstrap ? 'Create Store Admin Password' : 'Admin Dashboard Sign In'}
+              </h1>
+              <p className="font-body text-body-sm text-light-on-surface-variant mt-xs">
+                {needsBootstrap
+                  ? 'First-time setup: set an administrator password (min. 8 characters) to protect inventory, orders, and store controls.'
+                  : envConfigured
+                    ? 'Sign in with your store administrator password.'
+                    : 'Enter your administrator password to manage inventory, orders, and UAE store settings.'}
+              </p>
+            </div>
+            <BrandLogo variant="icon" size="md" />
           </div>
 
           <form onSubmit={needsBootstrap ? handleBootstrap : handleAdminLogin} className="flex flex-col gap-md">
@@ -456,13 +460,16 @@ export function AdminDashboardPage() {
   return (
     <div className="max-w-[1360px] w-full mx-auto px-md lg:px-xl py-xl flex-1">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-md mb-lg pb-md border-b border-light-outline-variant">
-        <div>
-          <span className="font-label text-label-sm text-light-primary uppercase tracking-wider">
-            HYGIENOVO Operations
-          </span>
-          <h1 className="font-headline text-headline-lg text-light-on-surface">
-            Administration Console
-          </h1>
+        <div className="flex items-center gap-md">
+          <BrandLogo variant="icon" size="md" />
+          <div>
+            <span className="font-label text-label-sm text-light-primary uppercase tracking-wider">
+              HYGIENOVO Operations
+            </span>
+            <h1 className="font-headline text-headline-lg text-light-on-surface">
+              Administration Console
+            </h1>
+          </div>
         </div>
         <div className="flex items-center gap-sm">
           <button
