@@ -20,6 +20,7 @@ jobs:
       - run: bun run build
         env:
           VITE_STATIC: 'true'
+          VITE_API_URL: ${{ vars.API_URL }}
           VITE_BASE: /HYGIENOVO/
       - run: cp dist/index.html dist/404.html && touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3

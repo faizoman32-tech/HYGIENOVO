@@ -29,10 +29,29 @@ initDatabase();
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
-const UPLOADS_DIR = path.resolve(process.cwd(), 'public', 'uploads');
+const UPLOADS_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR, 'uploads') : path.resolve(process.cwd(), 'public', 'uploads');
 if (!fs.existsSync(UPLOADS_DIR)) {
   fs.mkdirSync(UPLOADS_DIR, { recursive: true });
 }
+
+const ALLOWED_ORIGINS = (process.env.CORS_ORIGIN || 'https://faizoman32-tech.github.io')
+  .split(',')
+  .map((o) => o.trim())
+  .filter(Boolean);
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
+  }
+  if (req.method === 'OPTIONS') {
+    res.sendStatus(204);
+    return;
+  }
+  next();
+});
 
 app.use(express.json({ limit: '5mb' }));
 app.use('/uploads', express.static(UPLOADS_DIR));

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: hygienovo
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: hygienovo-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PASSCODE
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://faizoman32-tech.github.io

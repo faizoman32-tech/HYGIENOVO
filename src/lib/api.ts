@@ -1,9 +1,11 @@
 const BASE = import.meta.env.BASE_URL || '/';
-const IS_STATIC = import.meta.env.VITE_STATIC === 'true';
+const API_URL = ((import.meta.env.VITE_API_URL as string | undefined) || '').replace(/\/$/, '');
+const IS_STATIC = import.meta.env.VITE_STATIC === 'true' && !API_URL;
 
 /** Prefix root-relative asset URLs with the deploy base path (e.g. /HYGIENOVO/). */
 export function withBase(url: string): string {
   if (!url || !url.startsWith('/') || url.startsWith('//')) return url;
+  if (API_URL && url.startsWith('/uploads/')) return API_URL + url;
   if (BASE === '/' || url.startsWith(BASE)) return url;
   return BASE.replace(/\/$/, '') + url;
 }
@@ -60,7 +62,7 @@ export async function apiFetch<T>(
     headers.set('Authorization', `Bearer ${bearerToken}`);
   }
 
-  const res = await fetch(url, {
+  const res = await fetch(API_URL && url.startsWith('/api') ? API_URL + url : url, {
     ...options,
     headers,
   });
