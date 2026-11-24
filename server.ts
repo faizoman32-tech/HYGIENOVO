@@ -728,17 +728,24 @@ app.get('/api/orders/mine', requireCustomerAuth, (req: AuthenticatedRequest, res
 // ADMIN AUTHENTICATION & PROTECTED DASHBOARD API
 // ============================================================================
 
+// Self-service admin bootstrap is disabled in production: set ADMIN_PASSCODE instead.
+const BOOTSTRAP_ALLOWED = process.env.NODE_ENV !== 'production' || process.env.ALLOW_ADMIN_BOOTSTRAP === 'true';
+
 app.get('/api/admin/status', (_req, res) => {
   const envPasscode = (process.env.ADMIN_PASSCODE || '').trim();
   const settings = getSettingsRow();
   const hasStoredHash = Boolean(settings.admin_password_hash);
   res.json({
     envConfigured: Boolean(envPasscode),
-    needsBootstrap: !envPasscode && !hasStoredHash,
+    needsBootstrap: BOOTSTRAP_ALLOWED && !envPasscode && !hasStoredHash,
   });
 });
 
 app.post('/api/admin/bootstrap', (req, res) => {
+  if (!BOOTSTRAP_ALLOWED) {
+    res.status(403).json({ error: 'Admin bootstrap is disabled. Set ADMIN_PASSCODE on the server.' });
+    return;
+  }
   const envPasscode = (process.env.ADMIN_PASSCODE || '').trim();
   if (envPasscode) {
     res.status(409).json({ error: 'Administrator password is already configured.' });
