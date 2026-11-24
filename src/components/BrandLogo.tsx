@@ -1,6 +1,7 @@
-export const BRAND_LOCKUP_URL = '/assets/aistudio/Modern_Green_Hygiene_Logo_020f5572.png';
-export const BRAND_WORDMARK_URL = '/assets/aistudio/Modern_Green_Hygiene_Logo_-_Copy_3183ca2d.png';
-export const BRAND_ICON_URL = '/assets/aistudio/Modern_Green_Hygiene_Logo_-_Copy__2__b99ea182.png';
+import { withBase } from '../lib/api';
+export const BRAND_LOCKUP_URL = withBase('/assets/aistudio/Modern_Green_Hygiene_Logo_020f5572.png');
+export const BRAND_WORDMARK_URL = withBase('/assets/aistudio/Modern_Green_Hygiene_Logo_-_Copy_3183ca2d.png');
+export const BRAND_ICON_URL = withBase('/assets/aistudio/Modern_Green_Hygiene_Logo_-_Copy__2__b99ea182.png');
 
 interface BrandLogoProps {
   variant?: 'horizontal' | 'full' | 'icon';

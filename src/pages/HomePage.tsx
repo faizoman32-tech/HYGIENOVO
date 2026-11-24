@@ -1,3 +1,4 @@
+import { withBase } from '../lib/api';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
@@ -7,9 +8,9 @@ import { useStore } from '../context/StoreContext';
 import { apiFetch } from '../lib/api';
 import type { Product } from '../types';
 
-const HERO_IMG = '/src/assets/images/hero_office_hygiene_1795433518175.jpg';
+const HERO_IMG = withBase('/src/assets/images/hero_office_hygiene_1795433518175.jpg');
 
-const B2B_TOWER_IMG = '/src/assets/images/b2b_tower_supply_1795433518111.jpg';
+const B2B_TOWER_IMG = withBase('/src/assets/images/b2b_tower_supply_1795433518111.jpg');
 
 export function HomePage() {
   const { categories, showToast } = useStore();

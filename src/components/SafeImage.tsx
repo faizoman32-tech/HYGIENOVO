@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { withBase } from '../lib/api';
 
 interface SafeImageProps {
   src: string;
@@ -30,7 +31,7 @@ export function SafeImage({ src, alt, className = '' }: SafeImageProps) {
 
   return (
     <img
-      src={src}
+      src={withBase(src)}
       alt={alt}
       referrerPolicy="no-referrer"
       onError={() => setFailed(true)}
